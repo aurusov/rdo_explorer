@@ -48,9 +48,9 @@ $Parameters
 	T_f  : integer [0..1] = 0
 	F_c  : integer = 1
 	Q_c  : integer = 0
+	Ch_n : integer[1..256] = 1
 	Q_f  : integer [-1..1] = 0
 	Q_s  : integer = 0
-	Ch_n : integer[1..256] = 1
 	Nf   : integer = 0
 $End
 

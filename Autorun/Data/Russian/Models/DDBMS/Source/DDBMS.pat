@@ -1008,10 +1008,10 @@ Convert_rule
 Источник_запроса  set	Tr.Источник_запроса
 Состояние         set 	Tr.Состояние 
 Время_появления	  set	Time_now
+Номер_очереди	set	0
 F_c	          set	0
 Сч      	  set	0
 Cn	set	0
-Номер_очереди	set	0
 Pz_c	set	0
 $End
 {/ 34 / -Генерация транзакции-двойника для сбора статистических данных}
@@ -1163,9 +1163,9 @@ STr
 	STr.Номер_очереди = -3
 first					
 Convert_rule 
+F_c	set	0
 Сч	set	Tr.Сч
 Cn	set	STr.Cn + 1
-F_c	set	0
 Tr
 	Choice from
 	Tr.Кто = M and Tr.Номер = STr.Номер 
@@ -1302,7 +1302,7 @@ SQS
 	SQS.Arr <> Off or SQS.Сост <> Off
 first
 Convert_rule
-Arr	set	Off
 Сост	set	Off
+Arr	set	Off
 $End
 

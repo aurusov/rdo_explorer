@@ -73,8 +73,8 @@ $Body
 SwPlace(Mod(Dan.Ox,SbEd4.Xa),Us((Dan.Ox-SbEd4.Xa),SbEd4.RazmOx,SbEd1.RazmOx))=free
               first
               Convert_begin
-                         TeloN set SbEd1.Name
                          Do set take
+                         TeloN set SbEd1.Name
                Convert_end
                          Do set put
 
@@ -105,8 +105,8 @@ $Body
                                  SbEd1.Podv = Mov
            first
          Convert_begin
-                    Ya set SbEd1.Ya -(SbEd1.RazmOy + 5)
                     Xa  NoChange
+                    Ya set SbEd1.Ya -(SbEd1.RazmOy + 5)
                     Za  NoChange
          Convert_end
                Xa set {F1(SbEd1.Xa,(SbEd3.Xa+SbEd3.RazmOx + 2))} SbEd3.Xa + SbEd3.RazmOx + 2
@@ -152,8 +152,8 @@ $Body
        Choice from (SbEd3.Xa + SbEd3.RazmOx + SbEd1.RazmOx)<(Pole.Xa + Pole.RazmOx)
               first
              Convert_begin
-                         TeloN set Dan.Telo1
                          Do set take
+                         TeloN set Dan.Telo1
               Convert_end
                          Do set put
 $End
@@ -234,11 +234,11 @@ $Body
     Choice from SwStor(Us((SbEd1.Xa-SbEd2.Xa),(SbEd1.Xa-(SbEd2.Xa+SbEd2.RazmOx)),(SbEd2.Xa-(SbEd1.Xa+SbEd1.RazmOx))))=free
        first
       Convert_begin
-         TeloN set SbEd1.Name
          Do set take
+         TeloN set SbEd1.Name
       Convert_end
-         TeloN NoChange
          Do set put
+         TeloN NoChange
 $End
 
 $Pattern OsvStor: operation trace
@@ -311,8 +311,8 @@ SbEd1.Xa + Road(SbEd1.Xa,SbEd2.Xa)< (Pole.Xa + Pole.RazmOx)
      Choice from SwStor(Us((SbEd1.Xa-SbEd2.Xa),(SbEd1.Xa-(SbEd2.Xa+SbEd2.RazmOx)),(SbEd2.Xa-(SbEd1.Xa+SbEd1.RazmOx))))=nofree
       first
      Convert_begin
-      TeloN set Dan.Telo1
       Do set take
+      TeloN set Dan.Telo1
     Convert_end
          Do set put
          TeloN NoChange
@@ -395,11 +395,11 @@ Osnova(Us((SbEd1.Xa-SbEd3.Xa),(SbEd1.Xa-(SbEd3.Xa+SbEd3.RazmOx)),(SbEd3.Xa-(SbEd
                  (SbEd2.Xa-(SbEd1.Xa+SbEd1.RazmOx))))=nofree
                    first
            Convert_begin
-                     TeloN set SbEd1.Name
                      Do set take
+                     TeloN set SbEd1.Name
             Convert_end
-                     TeloN  NoChange
                      Do set put
+                     TeloN  NoChange
 $End
 
 $Pattern SwMesto: operation trace
@@ -461,11 +461,11 @@ SwPlace(Mod(SbEd1.Xa,Dan.Ox),Us((SbEd1.Xa-Dan.Ox),SbEd.RazmOx,SbEd1.RazmOx))=nof
       Choice from SwStor(Us((SbEd1.Xa-SbEd2.Xa),(SbEd1.Xa-(SbEd2.Xa+SbEd2.RazmOx)),(SbEd2.Xa-(SbEd1.Xa+SbEd1.RazmOx))))=free
         first
       Convert_begin
-          TeloN set SbEd1.Name
           Do set take
+          TeloN set SbEd1.Name
       Convert_end
-          TeloN  NoChange
           Do set kill
+          TeloN  NoChange
 $End
 
 $Pattern Peremena1: rule trace

@@ -60,8 +60,8 @@ $Body
  Convert_begin
  	Сост	set Недоступ
  Convert_end	
-	Сост	set Вход
 	Где	set Inc_to4(Mar.Где)
+	Сост	set Вход
 $End
 
 $Pattern Take:operation
@@ -130,8 +130,8 @@ $Body
  Convert_begin
 	Сост		set Недоступ
  Convert_end
-	Сост		set Выход
 	Вес		set Кто.Вес - 1
+	Сост		set Выход
 $End
 
 $Pattern Put:operation
