@@ -1,0 +1,108 @@
+$Resource_type Отделения : permanent
+$Parameters
+  Состояние : (Начало_Дня,Рабочий_День,Конец_Дня)
+$End
+
+$Resource_type Окна : permanent
+$Parameters
+  Номер             : integer[1..5]
+  Работоспособность : (Открыто,Закрыто)
+  Занятость         : (Свободен,Занят)
+  Обслужено         : integer[0..32530] = 0
+  В_Очереди         : integer[0..32530] = 0
+  Интервал1_Начало  : real
+  Интервал1_Конец   : real
+  Интервал2_Начало  : real
+  Интервал2_Конец   : real
+  Интервал3_Начало  : real
+  Интервал3_Конец   : real
+$End
+
+$Resource_type Клиенты : temporary
+$Parameters
+  Заявка           : (Rq1,
+                      Rq2,
+                      Rq3,
+                      Rq4,
+                      Rq5,
+                      Rq6,
+                      Rq7,
+                      Rq8,
+                      Rq9,
+                      Rq10,
+                      Rq11,
+                      Rq12,
+                      Rq13,
+                      Rq14,
+                      Rq15,
+                      Rq16,
+                      Rq17,
+                      Rq18,
+                      Rq19)
+  Состояние        : (Возник, Пришел, В_Очереди, Обслуживается, Обслужился, Ушел)
+  Номер_В_Очереди  : integer[1..32530]
+  Номер_Окна       : such_as Окна.Номер
+  Приход_В_Очередь : real
+  Время_В_Очереди  : real
+$End
+
+$Resource_type Изображаемые_Клиенты : permanent
+$Parameters
+  Номер  : such_as Окна.Номер
+  Заявка : such_as Клиенты.Заявка
+$End
+
+$Resource_type Счетчики : permanent
+$Parameters
+  Номер          : such_as Окна.Номер
+  Текущий_Клиент : integer[2..32530]
+$End
+
+$Resource_type Счетчики_Заявок : permanent
+$Parameters
+  Заявка     : such_as Клиенты.Заявка
+  Количество : integer[0..32530]
+$End
+
+$Resource_type Счетчики_Времени : permanent
+$Parameters
+  Номер              : such_as Окна.Номер
+  Время_На_Обработку : real
+$End
+
+$Resource_type Счетчики_Дней : permanent
+$Parameters
+  Количество_Дней : integer
+$End
+
+$Resource_type Смотрители : permanent
+$Parameters
+  Номер     : such_as  Окна.Номер
+  Разрешить : (Да,Нет)
+$End
+
+$Resource_type Виды_Нагрузки : permanent
+$Parameters
+  Вид                   : (Постоянный,
+                           Линейный_Увеличение,
+                           Линейный_Уменьшение,
+                           Равномерный,
+                           Экспоненциальный,
+                           Нормальный) = Постоянный
+  Минимум_Среднее_Число : real
+  Максимум_Дисперсия    : real
+  Грузить               : (Да,Нет)
+$End
+
+$Resource_type Счетчики_Часов : permanent
+$Parameters
+  Часы                : real
+  Соответствие        : (Да,Нет)
+  Последнее_Изменение : real
+$End
+
+$Resource_type Потерянные_Клиенты : permanent
+$Parameters
+  Количество : integer
+$End
+

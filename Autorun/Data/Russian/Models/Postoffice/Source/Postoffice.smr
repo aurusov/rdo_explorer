@@ -1,0 +1,13 @@
+Model_name = Postoffice
+
+Resource_file  = Postoffice
+OprIev_file    = Postoffice
+Frame_file     = Postoffice
+Statistic_file = Postoffice
+Results_file   = Postoffice 
+Trace_file     = Postoffice
+Show_mode      = Animation
+Frame_number   = 1
+Show_rate      = 50.0
+Terminate_if С_Рабочих_Дней.Количество_Дней = Год
+Break_point  Завершение_моделирования С_Рабочих_Дней.Количество_Дней = Год
