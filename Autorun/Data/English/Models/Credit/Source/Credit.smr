@@ -3,7 +3,7 @@ Model_name    = Credit
 Resource_file = Credit
 OprIev_file   = Credit
 Frame_file    = Credit
-Trace_file    = Credit
+{ Trace_file    = Credit }
 Show_mode     = Animation
 Show_rate     = 10000.0
 
