@@ -1,0 +1,13 @@
+Model_name       = DDBMS
+Resource_file    = DDBMS
+OprIev_file      = DDBMS
+Frame_file       = DDBMS
+Statistic_file   = DDBMS
+Results_file     = DDBMS
+{ Trace_file       = DDBMS }
+Show_mode        =  Animation
+Frame_number     =  1
+Show_rate        =  2000.0
+Trace_StartTime  =  0.0
+Trace_EndTime    =  480.0
+Terminate_if  Time_now > 48000.0

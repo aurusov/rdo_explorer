@@ -1,0 +1,5 @@
+$Results
+ Good1 : watch_state Robocar1.Usage = Load
+ Good2 : watch_state Robocar2.Usage = Load
+ Good3 : watch_state Robocar3.Usage = Load
+$End

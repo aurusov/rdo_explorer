@@ -1,0 +1,78 @@
+$Results
+  Machine_A_proc_1_2          : trace  watch_state  Machine_A.status = in_run and
+                                             Machine_A.cur_rate = 1.2
+  Machine_A_proc_1_0          : trace  watch_state  Machine_A.status = in_run and
+                                             Machine_A.cur_rate = 1.0
+  Machine_A_proc_0_8          : trace  watch_state  Machine_A.status = in_run and
+                                             Machine_A.cur_rate = 0.8
+  Machine_A_proc_0_4          : trace  watch_state  Machine_A.status = in_run and
+                                             Machine_A.cur_rate = 0.4
+  Machine_A_stop              : trace  watch_state  Machine_A.status = stop
+  Machine_A_stop_B_in_run     : watch_state  Machine_A.status = stop and
+                                             Machine_B.status = in_run
+  Machine_A_broken            : trace  watch_state  Machine_A.status = broken
+
+  Machine_B_proc_1_2          : trace  watch_state  Machine_B.status = in_run and
+                                             Machine_B.cur_rate = 1.2
+  Machine_B_proc_1_0          : trace  watch_state  Machine_B.status = in_run and
+                                             Machine_B.cur_rate = 1.0
+  Machine_B_proc_0_8          : trace  watch_state  Machine_B.status = in_run and
+                                             Machine_B.cur_rate = 0.8
+  Machine_B_proc_0_4          : trace  watch_state  Machine_B.status = in_run and
+                                             Machine_B.cur_rate = 0.4
+  Machine_B_stop              : trace  watch_state  Machine_B.status = stop
+  Machine_B_no_bot            : watch_state  Machine_B.status = in_run and
+                                             Machine_B.state  = free
+  Machine_B_no_bot_A_in_run   : watch_state  Machine_B.status = in_run and
+                                             Machine_B.state  = free and
+                                             Machine_A.status = in_run
+  Machine_B_broken            : trace  watch_state  Machine_B.status = broken
+
+  Machine_C_proc_1_2          : trace  watch_state  Machine_C.status = in_run and
+                                             Machine_C.cur_rate = 1.2
+  Machine_C_proc_1_0          : trace  watch_state  Machine_C.status = in_run and
+                                             Machine_C.cur_rate = 1.0
+  Machine_C_proc_0_8          : trace  watch_state  Machine_C.status = in_run and
+                                             Machine_C.cur_rate = 0.8
+  Machine_C_proc_0_4          : trace  watch_state  Machine_C.status = in_run and
+                                             Machine_C.cur_rate = 0.4
+  Machine_C_stop              : trace  watch_state  Machine_C.status = stop
+  Machine_C_no_bot            : watch_state  Machine_C.status = in_run and
+                                             Machine_C.state  = free
+  Machine_C_no_bot_B_in_run   : watch_state  Machine_C.status = in_run and
+                                             Machine_C.state  = free and
+                                             Machine_B.status = in_run
+  Machine_C_broken            : trace  watch_state  Machine_C.status = broken
+
+  Conveyer_1_cur_quant    : watch_par    Conveyer_1.cur_quant
+  Conveyer_2_cur_quant    : trace  watch_par  Conveyer_2.cur_quant
+  Conveyer_3_cur_quant    : watch_par    Conveyer_3.cur_quant
+  Conveyer_4_cur_quant    : watch_par    Conveyer_4.cur_quant
+  Conveyer_5_cur_quant    : trace  watch_par  Conveyer_5.cur_quant
+  Conveyer_6_cur_quant    : watch_par    Conveyer_6.cur_quant
+  Conveyer_A_cur_quant    : watch_par    Conveyer_A.cur_quant
+  Conveyer_B_cur_quant    : watch_par    Conveyer_B.cur_quant
+
+  Conveyer_1_cur_speed    : watch_par    Conveyer_1.cur_speed
+  Conveyer_2_cur_speed    : trace  watch_par    Conveyer_2.cur_speed
+  Conveyer_3_cur_speed    : watch_par    Conveyer_3.cur_speed
+  Conveyer_4_cur_speed    : watch_par    Conveyer_4.cur_speed
+  Conveyer_5_cur_speed    : trace  watch_par    Conveyer_5.cur_speed
+  Conveyer_6_cur_speed    : watch_par    Conveyer_6.cur_speed
+
+  Conveyer_1_cur_batch_quant : watch_par Conveyer_1.cur_batch_quant
+  Conveyer_2_cur_batch_quant : watch_par Conveyer_2.cur_batch_quant
+  Conveyer_3_cur_batch_quant : watch_par Conveyer_3.cur_batch_quant
+  Conveyer_4_cur_batch_quant : watch_par Conveyer_4.cur_batch_quant
+  Conveyer_5_cur_batch_quant : watch_par Conveyer_5.cur_batch_quant
+  Conveyer_6_cur_batch_quant : watch_par Conveyer_6.cur_batch_quant
+
+  Cur_Time                : get_value    Time_now
+  Machine_A_bot_count     : get_value    Machine_A.bot_count
+  Capasity_A              : get_value    Machine_A.bot_count / Time_now
+  Machine_B_bot_count     : get_value    Machine_B.bot_count
+  Capasity_B              : get_value    Machine_B.bot_count / Time_now
+  Machine_C_bot_count     : get_value    Machine_C.bot_count
+  Capasity_C              : get_value    Machine_C.bot_count / Time_now
+  Conveyer_3_lap_count    : get_value    Conveyer_3.lap_count
+$End

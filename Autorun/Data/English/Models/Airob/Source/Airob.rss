@@ -1,0 +1,19 @@
+$Resources
+ Part1:Solid A   50  30  30  100 260 150  *
+ Part2:Solid B   50  40  40  100  300 150 *
+ Part3:Solid C   50  20  70  100 320 150 *
+ Part4:Solid D1  20  45  70  210 320 100 UnMov
+ Part5:Solid D2  50  45  20  230 320  55 UnMov
+ Part6:Solid E   100  10  55  300 320 120 *
+ Part7:Solid F   35   20   50  300 310 120 *
+ Part8:Solid G   30   40   50  420 320 125 *
+ Part9:Solid floor 505 10  158  15 320  172  UnMov
+ Gripper:Robot *  15  220 50  
+ Opora1:Na A B   C   floor
+ Opora2:Na D1 floor floor floor
+Opora5: Na D2 floor floor floor
+ Opora3:Na F E   floor floor
+ Opora4:Na G floor floor floor
+ Deistv: Action  take  A
+ Rez: Goal B E 54 18 7
+$End

@@ -1,0 +1,8 @@
+$Results
+M_Где	:trace watch_par M1.Где
+M_Чей	:trace watch_par M1.Владелец
+M_Вх	:trace watch_state M1.Сост = Вход
+M_Вы	:trace watch_state M1.Сост = Выход
+{M_Вп	:trace watch_state M1.Сост = Впути}
+
+$End

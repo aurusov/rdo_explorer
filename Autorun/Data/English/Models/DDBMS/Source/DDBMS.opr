@@ -1,0 +1,78 @@
+$Operations
+{1  (1)}		G_op1	:GeneratePr	1	20.0  
+{2  (1)}		G_op2	:GeneratePr	2	18.0 
+{3  (1)}		G_op3	:GeneratePr	3	17.0
+{4  (1)}		G_op4	:GeneratePr	4	10.0 
+{5  (1)}		G_op5	:GeneratePr	5	15.0 
+{6  (1)}		G_op6	:GeneratePr	6	12.0
+{7  (2)}		G_op	:Generate
+{***(45)}	Gr2_op	:GrOff
+{***(44)} 	Gr1_op	:SubInqGr 
+{**(43)}	An9_op	:FiOff 
+{**(42)}	An8_op	:AnTrEr 
+{**(39)}	An5_op	: RedFiOn 
+{**(38)}	An4_op	:KinAnTr 
+{**(37)}	An3_op	:ActAnTr 
+{**(36)}	An2_op	:QuAnTr
+{**(40)}	An6_op	:CtAnTr
+{**(35)}	An1_op	:CreateAnTr 
+{**(41)}	An7_op	:GreenFiOn 
+{8 (33)}		St_op	: Get_Transaction_Statistic 
+{ Вход в очередь}	
+{9  (3)}		QIP_oA	:QueueInPr	A
+{10 (3)}		QIP_oF	:QueueInPr	F
+{11(3)}		QIP_oS	:QueueInPr	S
+
+{12(4)}		QI_oA	:QueueIn	A
+{13(4)}		QI_oF	:QueueIn	F
+{14(4)}		QI_oS	:QueueIn	S
+
+{15(5)}		RIF_oA	:ResInFl	A
+{16(5)}		RIF_oF	:ResInFl	F
+{17(5)}		RIF_oS	:ResInFl	S
+{ Выход из очереди }
+{18(6)}		QOP_oA	:QueueOutPr	A
+{19(6)}		QOP_oF	:QueueOutPr	F
+{20(6)}		QOP_oS	:QueueOutPr	S
+
+{21(7)}		QO_oA	:QueueOut	A
+{22(7)}		QO_oF	:QueueOut	F
+{23(7)}		QO_oS	:QueueOut	S
+
+{24(8)}		ROF_oA	:ResOutFl	A
+{25(8)}		ROF_oF	:ResOutFl	F
+{26(8)}		ROF_oS	:ResOutFl	S
+{Блокировка файлов}
+{27(12)}	WFC_op	:WrFiCom	0.01
+{28(9)}		FDP_op		:FiDecPr
+{29(10)}	FD_op		:FiDec
+{30(11)}	RFA_op		:RdFiAcc	0.01
+{31(13)}	RQC_op	:RdQuC
+{32(14)}	RQO_op	:RdQuOu
+{33(15)}	FC_op		:FiCom
+{ Декомпозиция }
+{34(16)}	SDP_op		:SerDecPr
+{35(17)}	CDP_op		:CouDecPr
+{36(18)}	TSIP_op		:TopSubInqPr
+{37(19)}	SD_op		:SerDec
+{ Обслуживание }
+{38(20)}	FSIMP_op	:FicSubInqMovPr
+{39(21)}	SISP_op		:SubInqSerPr 
+{40(22)}	SIS_op		:SubInqSer 		0.1	1.5
+{41(23)}	SIM_op		:SubInqMov 		1	3
+{42(24)}	TSIM_op	:TopSubInqMov 	1	3
+{43(27)}	ESIM_op	:EndSubInqMov
+{44(28)}	SIC_op		:SubInqCom
+{45(25)}	MOV_op	:Move 			6	0.001
+{46(26)}	OW_op		:OutWei 
+{ Композиция}
+{47(29)}	SCOM_op	:SerCom 
+{Разблокировка  файлов}
+{48(30)}	FDBP_op	:FiDeBlPr 
+{49(31)}	FDB_op		:FiDeBlock 
+
+{50(32)}	SEND_op	:SerEnd 
+
+{Мультяшки}
+{51(34)}	 Key_op:              Cartoon
+$End

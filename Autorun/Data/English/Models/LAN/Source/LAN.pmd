@@ -1,0 +1,7 @@
+$Results
+M_Where	:trace watch_par M1.Where
+M_Whose	:trace watch_par M1.Holder
+M_In  	:trace watch_state M1.State = Input
+M_Ou  	:trace watch_state M1.State = Output
+
+$End

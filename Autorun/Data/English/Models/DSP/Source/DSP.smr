@@ -1,0 +1,21 @@
+Model_name = DSP
+
+Resource_file  = DSP
+OprIev_file    = DSP
+Trace_file     = DSP
+Statistic_file = DSP
+Results_file   = DSP
+Frame_file     = DSP
+Frame_number   = 1
+Show_mode      = Animation
+Show_rate      = 50000.0
+
+ Quantity_of_products = 10
+ Min_term = 4000.0
+ Max_term = 9000.0
+ a = 0.1
+ b = 1.0
+
+Terminate_if  Systema.Only_of_product <= 0 
+{Time_now >= 50.0}
+

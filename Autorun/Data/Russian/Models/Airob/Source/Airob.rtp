@@ -1,0 +1,43 @@
+$Resource_type Telo:permanent
+$Parameters
+  Name:   (A,B,C,D1,D2,E,F,G,Pol)
+  RazmOx: integer=5
+  RazmOy: integer=3
+  RazmOz: integer
+  Xa:      integer
+  Ya:      integer
+  Za:      integer
+  Podv:   (Mov,UnMov)=Mov
+$End
+
+$Resource_type Instrument: permanent
+$Parameters
+  Sost: (Svoboden,Zanjat)=Svoboden
+  Ox:   integer
+  Oy:   integer
+  Oz:   integer
+$End
+
+$Resource_type Na: temporary
+$Parameters
+  Telo1: such_as Telo.Name
+  Telo2: such_as Telo.Name
+  Telo3: such_as Telo.Name
+  Telo4: such_as Telo.Name
+$End
+
+$Resource_type Action: permanent
+$Parameters
+  Do:    (take,put,kill,raport)
+  TeloN: such_as Telo.Name
+$End
+
+$Resource_type Goal: permanent
+$Parameters
+  Telo1: such_as Telo.Name
+  Telo2: such_as Telo.Name
+  Ox:    such_as  Telo.Xa
+  Oy:    such_as  Telo.Ya
+  Oz:    such_as Telo.Za
+$End
+

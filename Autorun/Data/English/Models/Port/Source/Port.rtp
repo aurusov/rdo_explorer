@@ -1,0 +1,42 @@
+$Resource_type  a_Port : permanent
+$Parameters
+  Tanker_arrived           : (yes, no) = no
+  Number_of_free_terminals : integer
+  Weather                  : (beginning_of_storm, there_is_storm, there_is_no_storm) = there_is_no_storm
+  Counter                  : integer
+  Type_of_tanker_arrived   : (type_1, type_2, type_3, type_4) = type_1
+$End
+
+$Resource_type  a_Tanker : temporary
+$Parameters
+  Number          : integer
+  Type            : such_as a_Port.Type_of_tanker_arrived
+  State           : (just_arrived, mooring, moored,
+                     filling, filled, leaving, gone)
+  Arrival_time    : real
+  Time_on_road    : real = 0.0
+  Time_of_filling : real = 0.0
+$End
+
+$Resource_type  a_Tug : permanent
+$Parameters
+  Busyness   : (free, busy)
+  Counter    : integer
+  Step       : (yes, no) = no
+$End
+
+$Resource_type  a_Terminal : permanent
+$Parameters
+  Number     : integer [1..3]
+  Busyness   : (free, busy)
+$End
+
+$Resource_type  a_Tanker_to_show : permanent
+$Parameters
+  Number           : integer
+  Tanker_number    : integer = 0
+  Type             : such_as a_Tanker.Type
+  State            : such_as a_Tanker.State
+  Terminal         : integer = 0
+$End
+

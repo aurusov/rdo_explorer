@@ -1,0 +1,51 @@
+$Resource_type Machines : permanent
+$Parameters
+  Busyness             : (Free, Busy, Is_broken, Repairing) = Free
+  What_is_loaded       : (Shaft_is_loaded, Loaded, Processed, Unloaded)
+  Number_of_breakdowns : integer = 0
+  Keeper               : integer = 0
+$End
+
+$Resource_type Robots : permanent
+$Parameters
+  Busyness             : (Free, Moving_empty, Moving_loaded,
+                          Loading, Unloading) = Free
+  Location             : (Not, Conveyer_1, Conveyer_2, Conveyer_3,
+                          AssPos, GrindMach, CoolPos_entrance, CoolPos_delivery)
+  Place_to_go          : such_as Robots.Location = Not
+  Coordinate           : integer
+  Moving               : (No_moving, Moving_left, Moving_right) = No_moving
+$End
+
+$Resource_type Conveyers : permanent
+$Parameters
+  Number               : integer  [1..3]
+  Quantity_of_parts    : integer  [0..20]
+  Position             : integer  [0..20] = 1
+  Moving               : (Stop, Move, Blocked) = Stop
+$End
+
+$Resource_type Cooling_positions : permanent
+$Parameters
+  Quantity_of_parts    : integer  [0..10]
+  Position             : integer  [0..20] = 1
+  Moving               : (Stop, Move, Blocked) = Stop
+$End
+
+$Resource_type Parts : temporary
+$Parameters
+  Arrival_time  : real
+  Kind          : (a_shaft, a_fan, a_rotor)
+  Location      : (Conveyer_1, Conveyer_2, Conveyer_3,
+                   AssPos, GrindMach, CoolPos, Robot,
+                   near_Conveyer_1, near_Conveyer_2)
+  Time_on_CP    : real = 0.0
+$End
+
+$Resource_type Part_of_conveyer : permanent
+$Parameters
+  Conveyer_number  : integer  [1..4]
+  Part_number      : integer  [0..20]
+  State            : (Empty, is_filled)
+$End
+

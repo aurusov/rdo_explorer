@@ -1,0 +1,7 @@
+$Operations
+  Operation_1  : Delivery_on_warehouse
+  Operation_2  : Consumption
+$End
+
+
+

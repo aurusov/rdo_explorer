@@ -1,0 +1,13 @@
+Model_name = Terminal
+
+Resource_file  = Terminal
+OprIev_file    = Terminal
+Frame_file     = Terminal
+Statistic_file = Terminal
+Results_file   = Terminal
+Trace_file     = Terminal
+Show_mode      = Animation
+Frame_number   = 1
+Show_rate      = 600000.0
+
+Terminate_if Time_now >= 1.0

@@ -1,0 +1,12 @@
+$Resource_type System : permanent
+$Parameters
+  State_Petal      : integer
+  State_Position   : integer
+  Status           : (Action, Transition)
+  Environment      : (Penalty, Encouragement)
+  Counter          : real  = 0.0
+  Counter_1        : real  = 0.0
+  Counter_2        : real  = 0.0
+  Counter_3        : real  = 0.0
+$End
+

@@ -1,0 +1,24 @@
+$Resources
+  Port       : a_Port    trace  *  3  *  5  *
+  Tug        : a_Tug     trace  free 0  *
+  Terminal_1 : a_Terminal  1  free
+  Terminal_2 : a_Terminal  2  free
+  Terminal_3 : a_Terminal  3  free
+  Tanker_1   : a_Tanker  trace  1  type_4  just_arrived 0.0  *  *
+  Tanker_2   : a_Tanker  trace  2  type_4  just_arrived 0.0  *  *
+  Tanker_3   : a_Tanker  trace  3  type_4  just_arrived 0.0  *  *
+  Tanker_4   : a_Tanker  trace  4  type_4  just_arrived 0.0  *  *
+  Tanker_5   : a_Tanker  trace  5  type_4  just_arrived 0.0  *  *
+
+  TTS_1  : a_Tanker_to_show  {trace}   1  1  type_4  just_arrived  *
+  TTS_2  : a_Tanker_to_show  {trace}   2  2  type_4  just_arrived  *
+  TTS_3  : a_Tanker_to_show  {trace}   3  3  type_4  just_arrived  *
+  TTS_4  : a_Tanker_to_show  {trace}   4  4  type_4  just_arrived  *
+  TTS_5  : a_Tanker_to_show  {trace}   5  5  type_4  just_arrived  *
+  TTS_6  : a_Tanker_to_show  {trace}   6  *  type_1  just_arrived  *
+  TTS_7  : a_Tanker_to_show  {trace}   7  *  type_1  just_arrived  *
+  TTS_8  : a_Tanker_to_show  {trace}   8  *  type_1  just_arrived  *
+  TTS_9  : a_Tanker_to_show  {trace}   9  *  type_1  just_arrived  *
+  TTS_10 : a_Tanker_to_show  {trace}  10  *  type_1  just_arrived  *
+$End
+

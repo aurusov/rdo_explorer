@@ -1,0 +1,150 @@
+$Resource_type  Sheets_store : permanent
+$Parameters
+  Number_of_sheets  : integer  [0..288]
+$End
+
+$Resource_type  a_Crane : permanent
+$Parameters
+  Busyness          : (Free, Busy)
+  Position          : ( _Sheets_store9, _Half_finished_product_area,
+                        _Band_forwarding_device29, _Band_forwarding_device30,
+                        _Band_forwarding_device31, _Band_forwarding_device32,
+                        _Shelving10, _Shelving11, _Shelving12,
+                        _Shelving13, _Sheets_store8, _Roller_conveyer,
+                        _Input_table)
+$End
+
+$Resource_type  a_Man : permanent
+$Parameters
+  Busyness          : (Free, Busy, Wait,
+                       Load_in_machine,
+                       Unload_from_washing_machine_first_time,
+                       Work_of_man4, Work_of_man5,
+                       Man3_wait_for_the_second_time,
+                       Man3_busy_with_washing_machine_for_the_second_time,
+                       Load_in_washing_machine_for_the_second_time,
+                       Unload_from_washing_machine_second_time,
+                       Unload_from_smooth_out_machine)
+  Name              : (Man_1, Man_2, Man_3,
+                       Man_4, Man_5)
+$End
+
+$Resource_type  Half_finished_product_area : permanent
+$Parameters
+  Busyness             : (Free, Busy)
+  Functioning          : (Loaded, Worked, Unloaded)
+  Number_of_the_bands  : integer  [0..216]
+$End
+
+$Resource_type  Band_forwarding_device : permanent
+$Parameters
+  Busyness             : (Free, Busy)
+  Number_of_the_bands  : integer  [0..216]
+  Name                 : (Band_forwarding_device_29, Band_forwarding_device_30,
+                          Band_forwarding_device_31, Band_forwarding_device_32)
+$End
+
+$Resource_type  a_Shelving : permanent
+$Parameters
+  Number_of_the_bands  : integer  [0..1080]
+  Name                 : (Shelving_10, Shelving_11, Shelving_12, Shelving_13)
+$End
+
+$Resource_type  a_Press_punch : permanent
+$Parameters
+  Busyness          : (Free, Busy)
+  Functioning       : (Loaded, Worked_Unloaded)
+  Name              : (Press_1, Press_1111, Press_2, Press_2222)
+$End
+
+$Resource_type  a_Smooth_out_device : permanent
+$Parameters
+  Busyness               : (Free, Busy)
+  Number_of_the_parts    : integer  [0..123]
+  Name                   : (Smoothing_out_14, Smoothing_out_1414, Smoothing_out_16,
+                            Smoothing_out_1616)
+$End
+
+$Resource_type  Device_of_packing_in_casette : permanent
+$Parameters
+  Busyness            : (Free, Busy)
+  Number_of_the_parts : integer  [0..50]
+  Name                : (Casette_15, Casette_151, Casette_17, Casette_171)
+$End
+
+$Resource_type  a_Transport_robot : permanent
+$Parameters
+  Busyness          : (Free, Busy)
+  Position          : (Case15, Case151, Case17, Case171,
+                       Store_block3, Store_block3333,
+                       Store_block23, Store_block2323,
+                       Reception_device2526, Reception_device2728,
+                       Man1, Man2, Man3,
+                       Man4, Man5,
+                       Assembling_place122,
+                       Assembling_place222,
+                       Assembling_place322,
+                       Assembling_place422,
+                       Reception_device2827)
+  Condition         : (Stand, Go, Stand_by_the_store_block3,
+                       Stand_by_block30)
+  Name              : (Robot_125, Robot_225, Robot_126, Robot_226,
+                       Robot_127, Robot_227, Robot_128, Robot_228)
+$End
+
+$Resource_type  an_Assembling_place : permanent
+$Parameters
+  Busyness             : (Free, Busy, Wait)
+  Functioning          : (Loaded, The_end_of_assembling, Unloaded)
+  The_rest_of_parts    : integer  [0..48]
+  Name                 : (Assembling_122, Assembling_222, Assembling_322, Assembling_422)
+$End
+
+$Resource_type  a_Roller_conveyer : permanent
+$Parameters
+  Busyness          : (Free, Busy)
+  Number_of_sheets  : integer  [0..72]
+  Position          : (Roller_conveyer, Scissors_)
+$End
+
+$Resource_type  an_Input_table : permanent
+$Parameters
+  Number_of_the_bands   : integer  [0..216]
+$End
+
+$Resource_type  a_Scissors : permanent
+$Parameters
+  Busyness          : (Free, Busy)
+  Functioning       : (Loaded, Worked_Unloaded)
+$End
+
+$Resource_type  a_Store_block : permanent
+$Parameters
+  Busy_cells        : integer  [0..448]
+  Busyness          : (Free, Busy)
+  Name              : (Block_3, Block_3333, Block_23, Block_2323, Block_30)
+$End
+
+$Resource_type  a_Input_output_device : permanent
+$Parameters
+  Busyness          : (Free, Busy, Wait)
+  Name              : (Reception_2526, Reception_2728, Reception_2827)
+$End
+
+$Resource_type  a_Smooth_out_machine : permanent
+$Parameters
+  Busyness          : (Free, Busy, Free_but_not_shutting_off)
+  Functioning       : integer  [0..600]
+$End
+
+$Resource_type  a_Washing_machine : permanent
+$Parameters
+  Busyness          : (Free, Busy)
+  Functioning       : (Loaded, The_end_of_washing, Unloaded,
+                       Loaded_for_the_second_time,
+                       The_end_of_second_washing,
+                       Wait_second_loading,
+                       Wait_loading)
+  Name              : (Washing_00, Washing_19)
+$End
+

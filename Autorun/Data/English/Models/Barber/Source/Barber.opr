@@ -1,0 +1,6 @@
+$Operations
+  Client_arrival    : Client_arrival_pattern
+  Placing           : Placing_Pattern
+  Client_servicing  : Client_servicing_pattern
+$End
+

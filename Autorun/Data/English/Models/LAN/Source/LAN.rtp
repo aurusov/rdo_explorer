@@ -1,0 +1,15 @@
+$Resource_type Buck:permanent
+$Parameters
+	Where       :	integer[0..4]
+	Holder      :	such_as Buck.Where
+	Buzy_status :	(Buzy,Free) = Free
+	Whom        :	such_as Buck.Where
+	Weight      :	integer[0..20] = 0
+	State       :	(Input,Output,Inaccessible) = Output
+$End
+
+$Resource_type Abonent:permanent
+$Parameters
+	Number      :	such_as Buck.Where
+	Inquiry     :	(Be,No)=No 
+$End

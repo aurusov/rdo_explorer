@@ -1,0 +1,78 @@
+$Resource_type Robocars : permanent
+$Parameters
+ Number      : integer[1..3]
+ Current_X   : integer[50..652]
+ Current_Y   : integer[78..416]
+ Target_X    : integer[50..652]
+ Target_Y    : integer[78..416]
+ Usage       : (Load,Empty) = Empty
+ Time_Begin  : real
+ Time_End    : real
+ Effect_Time : real
+ arb         : integer[0..1]
+ arb1        : integer[0..1]
+ arb2        : integer[0..1]
+$End
+$Resource_type Robocar_Up : permanent
+$Parameters
+ Current_X : integer[128..686]
+ Target_X  : integer[128..686]
+ Usage     : (Load,Empty) = Empty
+ Time_Begin  : real
+ Time_End    : real
+ Effect_Time : real
+ arb       : integer[0..1]
+ arb1      : integer[0..1]
+ arb2      : integer[0..1]
+$End
+$Resource_type Robocar_Down : permanent
+$Parameters
+ Current_X : integer[128..574]
+ Target_X  : integer[128..574]
+ Usage     : (Load,Empty) = Empty
+ Time_Begin  : real
+ Time_End    : real
+ Effect_Time : real
+ arb       : integer[0..1]
+ arb1      : integer[0..1]
+ arb2      : integer[0..1]
+$End
+$Resource_type System_Up :permanent
+$Parameters
+ Where_Go  : (Saver1,Saver2,Saver3,Custom,No_Where)
+ Last_Go   : such_as System_Up.Where_Go
+ Condition : (B_Do,Do,E_Do)
+$End
+$Resource_type System_Down :permanent
+$Parameters
+ Where_Go  : (Saver1,Saver2,Saver3,
+              Saver1_Out,Saver2_Out,Saver3_Out,No_Where)
+ Last_Go   : such_as System_Down.Where_Go
+ Condition : (B_Do,Do,E_Do)
+$End
+$Resource_type Systems : permanent
+$Parameters
+ Number    : integer[1..3]
+ Where_Go  : (Cell_Free,Cell_Buzy,
+              Saver_Up_Free,Saver_Down_Buzy,No_Where)
+ Last_Go   : such_as Systems.Where_Go
+ Condition : (B_Do,Do,E_Do)
+$End
+$Resource_type Savers : permanent
+$Parameters
+ Number   : integer[1..3]
+ How_Much : integer[0..250]
+ Work     : (Add,Sub,Cell)
+$End
+$Resource_type Savers_U_D : permanent
+$Parameters
+ How_Much : integer[0..250]
+ Work     : (Add,Sub)
+ Ready    : (On,Off)
+$End
+$Resource_type Savers_Down : permanent
+$Parameters
+ Number   : integer[1..3]
+ How_Much : integer[0..25000]
+ Work     : (Add,Sub)
+$End

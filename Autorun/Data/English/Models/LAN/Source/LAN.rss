@@ -1,0 +1,7 @@
+$Resources
+	M1:	Buck  1 0 * 0 * *
+	S1:	Abonent 1 *
+	S2:	Abonent 2 *
+	S3:	Abonent 3 *
+	S4:	Abonent 4 *
+$End

@@ -1,0 +1,114 @@
+{1}
+$Resource_type Goods_tt : temporary
+$Parameters
+  Sum : integer
+  Name : (trousers, shirt, sport_shirt)
+  Number : integer
+  Goods_f_A1 : integer[0..1]
+  Goods_f_A44 : integer[0..1]
+$End
+
+{2}
+$Resource_type Credit_card_tt : temporary
+$Parameters
+  Sum : integer
+  Number : integer
+  Number_of_order : (before_first, before_second, first_, second)
+  Credit_card_f_A2 : integer[0..1]
+  Credit_card_f_A43 : integer[0..1]
+  Credit_card_f_A42 : integer[0..1]
+$End
+
+{3}
+$Resource_type Credit_card1_tt : temporary
+$Parameters
+  Sum : integer
+  Number : integer
+$End
+
+{4}
+$Resource_type Order_tt : temporary
+$Parameters
+  Sum : integer
+  Number : integer
+$End
+
+{5}
+$Resource_type Cheque_tt : temporary
+$Parameters
+  Sum : integer
+  Number : integer
+$End
+
+{6}
+$Resource_type Cash_equipment_pt : permanent
+$Parameters
+  Busyness : (Busy, Free) = Free
+  Number_of_order : such_as Credit_card_tt.Number_of_order
+$End
+
+{7}
+$Resource_type Credit_card_machine_pt : permanent
+$Parameters
+  Busyness : (Busy, Free) = Free
+  Number_of_order : such_as Credit_card_tt.Number_of_order
+$End
+
+{8}
+$Resource_type Permission_of_payment_tt : temporary
+$Parameters
+  Permission_of_payment_m : integer
+  Number : integer
+  Permission_of_payment_f_A41 : integer[0..1]
+  Permission_of_payment_f_A42 : integer[0..1]
+  Permission_of_payment_f_A44 : integer[0..1]
+  Permission_of_payment_f_A43 : integer[0..1]
+$End
+
+{9}
+$Resource_type Price_tt : temporary
+$Parameters
+  Sum : integer
+  Number : integer
+  Price_f_A3 : integer[0..1]
+  Price_f_A41 : integer[0..1]
+  Price_f_A42 : integer[0..1]
+  Price_f_A43 : integer[0..1]
+$End
+
+{10}
+$Resource_type PC_pt : permanent
+$Parameters
+  Busyness : (Busy, Free) = Free
+$End
+
+{11}
+$Resource_type Network_pt : permanent
+$Parameters
+  Busyness : integer
+$End
+
+{12}
+$Resource_type Account_tt : temporary
+$Parameters
+  Sum : integer
+  Number : integer
+  Account_f_A3 : integer[0..1]
+$End
+
+{13}
+$Resource_type New_data_about_customer_tt : temporary
+$Parameters
+  Sum : integer
+  Number : integer
+$End
+
+{14}
+$Resource_type Number_pt : permanent
+$Parameters
+  Number     : integer = 0
+  Come_out   : integer = 0
+  In_system: integer = 0
+  Lenghth_of_queue_1 : integer = 0
+  Lenghth_of_queue_2 : integer = 0
+$End

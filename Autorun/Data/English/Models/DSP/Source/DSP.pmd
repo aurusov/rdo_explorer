@@ -1,0 +1,37 @@
+$Results
+Line1_Busy       : watch_state    Line_1.Condition = Busy
+Line2_Busy       : watch_state    Line_2.Condition = Busy
+Line31_Busy      : watch_state    Line_31.Condition = Busy
+Line32_Busy      : watch_state    Line_32.Condition = Busy
+Arrange_Line1  : watch_state    Line_1.Condition = Arrange
+Arrange_Line2  : watch_state    Line_2.Condition = Arrange
+Arrange_Line31 : watch_state    Line_31.Condition = Arrange
+Arrange_Line32 : watch_state    Line_32.Condition = Arrange
+Line1_Free     : watch_state    Line_1.Condition = Free 
+Line2_Free     : watch_state    Line_2.Condition = Free
+Line31_Free    : watch_state    Line_31.Condition = Free
+Line32_Free    : watch_state    Line_32.Condition = Free
+Line1_Ready       : watch_state    Line_1.Condition = Ready   
+Line2_Ready       : watch_state    Line_2.Condition = Ready  
+Line31_Ready      : watch_state    Line_31.Condition = Ready  
+Line32_Ready      : watch_state    Line_32.Condition = Ready  
+Robot1_Free     : watch_state    Robot_1.Condition = Free
+Robot2_Free     : watch_state    Robot_2.Condition = Free
+Robot3_Free     : watch_state    Robot_3.Condition = Free
+Plan_of_Order_1       : get_value    Order_1.Time_plan / 6
+Plan_of_Order_2       : get_value    Order_2.Time_plan / 6
+Plan_of_Order_3       : get_value    Order_3.Time_plan / 6
+Plan_of_Order_4       : get_value    Order_4.Time_plan / 6
+Plan_of_Order_5       : get_value    Order_5.Time_plan / 6
+Delay_of_Order_1  : get_value    Order_1.Time_out / 6
+Delay_of_Order_2  : get_value    Order_2.Time_out / 6
+Delay_of_Order_3  : get_value    Order_3.Time_out / 6
+Delay_of_Order_4  : get_value    Order_4.Time_out / 6
+Delay_of_Order_5  : get_value    Order_5.Time_out / 6
+Average_time_on_detail : get_value   Time_now / (Systema.Only_of_detail * 6)
+Quantity_of_details  : get_value    Systema.Only_of_detail 
+Total_deviation : get_value    (Weight(Order_1.Time_out) + Weight(Order_2.Time_out) + Weight(Order_3.Time_out) + Weight(Order_4.Time_out) + Weight(Order_5.Time_out) ) / 6
+Time_works     : get_value    Time_now / 6
+
+$End
+

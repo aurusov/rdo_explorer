@@ -1,0 +1,25 @@
+$Resources
+Robocar1 : Robocars 1 128 78 128 78 * 0.0 0.0 0.0 1 0 0
+Robocar2 : Robocars 2 351 78 351 78 * 0.0 0.0 0.0 1 0 0
+Robocar3 : Robocars 3 574 78 574 78 *  0.0 0.0 0.0 1 0 0
+Robocar_Upper : Robocar_Up 686 686 Load 0.0 0.0 0.0 1 0 0
+Robocar_Downer : Robocar_Down 574 574 Empty 0.0 0.0 0.0 1 0 0
+System_In : System_Up No_Where No_Where  E_Do
+System_Out: System_Down No_Where No_Where E_Do
+System1  : Systems 1 No_Where No_Where E_Do
+System2  : Systems 2 No_Where No_Where E_Do
+System3  : Systems 3 No_Where No_Where E_Do
+Saver1_Add : Savers 1 0  Add
+Saver2_Add : Savers 2 0  Add
+Saver3_Add : Savers 3 0  Add
+Saver1_Sub : Savers 1 0  Sub
+Saver2_Sub : Savers 2 0  Sub
+Saver3_Sub : Savers 3 0  Sub
+S_1_A : Savers 1 0 Cell
+S_2_A : Savers 2 0 Cell
+S_3_A : Savers 3 0 Cell
+S_In  : Savers_U_D  0 Sub On
+S_Out_1 : Savers_Down 1 0 Add
+S_Out_2 : Savers_Down 2 0 Add
+S_Out_3 : Savers_Down 3 0 Add
+$End

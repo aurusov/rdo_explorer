@@ -1,0 +1,5 @@
+$Results
+  Action_of_automaton_1   : get_value    Automaton.Counter_1 / Automaton.Counter 
+  Action_of_automaton_2   : get_value    Automaton.Counter_2 / Automaton.Counter
+  Action_of_automaton_3   : get_value    Automaton.Counter_3 / Automaton.Counter
+$End

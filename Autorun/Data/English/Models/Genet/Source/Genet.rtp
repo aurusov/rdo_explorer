@@ -1,0 +1,60 @@
+$Resource_type  System_type  : permanent
+$Parameters
+  Generation_number         : integer [0..1000]
+  Generation_size           : integer [0..100]  { must be even }
+  Probability_of_crossover  : real [0.0..1.0]
+  Probability_of_mutation   : real [0.0..1.0]
+  Mode                      : (Initialisation, FF_calculation,
+                               Reproduction, Crossover, Mutation)
+  Counter                   : such_as System_type.Generation_size
+  a_Value                   : real = 0.0
+  Parent_1                  : such_as System_type.Generation_size = 0
+  Parent_2                  : such_as System_type.Generation_size = 0
+  Crossover_byte            : integer [0..8] = 0
+  Crossover_bit             : integer [0..8] = 0
+  Mutation_byte             : integer [0..8] = 0
+  Mutation_bit              : integer [0..8] = 0
+  Counter_bit               : such_as System_type.Generation_size = 0
+$End
+
+$Resource_type  a_Generation  : temporary
+$Parameters
+  Number                : such_as System_type.Generation_number
+  Size                  : such_as System_type.Generation_size
+  Sum_of_FF_values      : real
+  Average_FF_value      : real
+  Minimum_FF_value      : real
+  Maximum_FF_value      : real
+  Number_of_crossovers  : integer
+  Number_of_mutations   : integer
+$End
+
+$Resource_type  An_individual  : temporary
+$Parameters
+  Parameter_1           : integer [0..255]
+  Parameter_2           : integer [0..255]
+  Parameter_3           : integer [0..255]
+  Parameter_4           : integer [0..255]
+  Generation_number     : such_as System_type.Generation_number
+  Individual_number     : such_as System_type.Generation_size
+  Parent_1              : such_as System_type.Generation_size
+  Parent_2              : such_as System_type.Generation_size
+  Number_of_children    : such_as System_type.Generation_size
+  Crossover_byte        : integer [0..8]
+  Crossover_bit         : integer [0..8]
+  Mutation_byte         : integer [0..8]
+  Mutation_bit          : integer [0..8]
+  Status                : (not_considered, considered)
+  FF_value              : real
+  Sum_before            : real
+  Sum_after             : real
+$End
+
+$Resource_type  An_individual_to_show  : permanent
+$Parameters
+  Individual_number     : such_as System_type.Generation_size
+  X_value               : real [0.0..1.0] = 0.0
+  Y_value               : real [0.0..1.0] = 0.0
+  X_coordinate          : real = -100.0
+  Y_coordinate          : real = -100.0
+$End

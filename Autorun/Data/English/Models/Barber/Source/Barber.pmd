@@ -1,0 +1,7 @@
+$Results
+  Queue_length            : watch_par   BarberShop.Number_of_clients_in_a_queue
+  Busyness_of_hairdresser : watch_state BarberShop.Busyness_of_hairdresser = Busy
+  Totally_serviced        : get_value   BarberShop.Number_of_clients_serviced
+  BarberShop_throughput   : get_value   BarberShop.Number_of_clients_serviced / Time_now
+$End
+

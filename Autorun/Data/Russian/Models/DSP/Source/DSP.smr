@@ -1,0 +1,16 @@
+Model_name =DSP
+
+Resource_file  =DSP
+OprIev_file    =DSP
+Statistic_file =DSP
+Results_file   =DSP
+Trace_file     =DSP
+Frame_file     =dsp
+Frame_number   = 1
+Show_mode      = Animation
+Show_rate      = 50000.0
+
+ Количество_изделий = 10
+
+Terminate_if  Систем.Всего_издел <= 0 
+{Time_now >= 50.0}

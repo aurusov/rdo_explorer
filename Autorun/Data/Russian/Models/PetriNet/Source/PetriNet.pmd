@@ -1,0 +1,13 @@
+$Results
+  Станок_1_Занят      : watch_state   Место_2.Pic > 0
+  Станок_1_Свободен   : watch_state   Место_2.Pic = 0
+  Станок_2_Занят      : watch_state   Место_3.Pic > 0
+  Станок_2_Свободен   : watch_state   Место_3.Pic = 0
+  Тара_1_Количество   : watch_par     Место_1.Pic
+  Тара_2_Количество   : watch_par     Место_4.Pic
+  Робот_Количество    : watch_par     Место_5.Pic
+  Тара_1_Конец        : get_value     Место_1.Pic
+  Тара_2_Конец        : get_value     Место_4.Pic
+  Станок_1_Конец      : get_value     Место_2.Pic
+  Станок_2_Конец      : get_value     Место_3.Pic
+$End

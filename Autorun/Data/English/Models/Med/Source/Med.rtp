@@ -1,0 +1,79 @@
+$Resource_type State : permanent 
+$Parameters 
+  Rythm         : integer 
+  Pressure      : integer 
+  Temperature   : integer 
+  Resistanse    : integer 
+$End 
+ 
+$Resource_type Gauge_busy_type : permanent 
+$Parameters 
+  Heart       : integer 
+  Pressure    : integer 
+  Temperature : integer 
+  Skin        : integer 
+$End 
+ 
+$Resource_type Gauges : permanent 
+$Parameters 
+  Value      : integer 
+  Fulfilment : integer[0..1] 
+$End 
+ 
+$Resource_type Ranges : permanent 
+$Parameters 
+  Maximum        : integer 
+  Minimum        : integer 
+$End 
+ 
+$Resource_type Nurses : permanent 
+$Parameters 
+  Step_No      : integer[0..255]
+  Step         : (Doing, Done)
+  Coordinate_X : integer
+  Coordinate_Y : integer
+$End 
+ 
+$Resource_type Computers : permanent 
+$Parameters 
+  Busy  : integer 
+$End 
+ 
+$Resource_type Doctors : permanent 
+$Parameters 
+  Wants_to     : (Has_place , Has_no_place , Has_place_1 , Has_no_place_1)
+  Step_No      : integer [0..255]
+  Step         : (Doing, Done)
+  Coordinate_X : integer = 0
+  Coordinate_Y : integer = 55
+$End 
+ 
+$Resource_type Drugs : permanent 
+$Parameters 
+  Data  : integer[0..1] 
+$End 
+ 
+$Resource_type Treating_doctors: permanent 
+$Parameters 
+  Data  : integer[0..1] 
+$End 
+ 
+$Resource_type Initializing_pulses : permanent 
+$Parameters 
+  Pulse    : (Has_place , Has_no_place , Has_place_1 , Has_no_place_1) 
+  A11      : integer[0..1] 
+  A12      : integer[0..1] 
+  A13      : integer[0..1] 
+  A14      : integer[0..1] 
+  A21      : integer[0..1] 
+  A22      : integer[0..1] 
+  A23      : integer[0..1] 
+  A24      : integer[0..1] 
+  A3       : integer[0..1] 
+$End 
+ 
+$Resource_type Screen_view : permanent 
+$Parameters 
+  Alarm  : (Blinking, Not_Blinking, Blinking_1, Not_Blinking_1)
+$End
+

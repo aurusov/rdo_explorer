@@ -1,0 +1,37 @@
+$Operations
+Upper_System_Operation :System_Impact_For_Up_Saver
+Downer_System_Operation :System_Impact_For_Down_Saver
+Operation_For_System1 : System_Impact 1
+Operation_For_System2 : System_Impact 2
+Operation_For_System3 : System_Impact 3             {speed 60 m/min}
+O_Up_Target : Set_Target_Up                    {System Time - hours}
+O_Down_Target: Set_Target_Down
+O_Up_Current: Set_XTarget_Up 0.00003472              {*2-speed}
+O_Down_Current : Set_XTarget_Down 0.00006944         {*1-speed}
+O0_1 : Set_Target 1
+O0_2 : Set_Target 2
+O0_3 : Set_Target 3
+O1_1 : Set_yuzel 0.00006944 1
+O1_2 : Set_yuzel 0.00006944 2
+O1_3 : Set_yuzel 0.00006944 3
+O2_1 : Set_xtarget 0.00006944 1
+O2_2 : Set_xtarget 0.00006944 2
+O2_3 : Set_xtarget 0.00006944 3
+O3_1 : Set_ytarget 0.00006944 1
+O3_2 : Set_ytarget 0.00006944 2
+O3_3 : Set_ytarget 0.00006944 3
+O4_1 : Set_arb 1
+O4_2 : Set_arb 2
+O4_3 : Set_arb 3
+O_Up_Arb : Set_arb_Up
+O_Down_Arb : Set_arb_Down
+{Add1 : Key 'Q' 1
+Add2 : Key 'W' 2
+Add3 : Key 'E' 3}
+Again1: Rescue 1
+Again2: Rescue 2
+Again3: Rescue 3
+Again_Down : Rescue_Down
+Again_Up : Rescue_Up
+Flied : Fly_In
+$End

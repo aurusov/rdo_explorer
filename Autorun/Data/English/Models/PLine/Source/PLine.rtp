@@ -1,0 +1,86 @@
+$Resource_type a_Conveyer : permanent
+$Parameters
+  number             : integer [1..200]
+  number_of_bands    : integer [1..14]
+  length             : real
+  prev_conv_number   : integer [0..200]
+  next_conv_number   : integer [0..200]
+  passing_cap        : integer [0..14]
+  cur_speed          : real
+  cur_rate           : real = 1.0
+  change_speed       : (yes, no) = no
+  cur_quant          : integer  = 0
+  cur_batch_quant    : integer [0..255] = 0
+  batch_quant        : integer  = 0
+  enter_state        : (enter_free, enter_in_process) = enter_free
+  state              : (free, moving) = free
+  lap_count          : integer = -32767
+  position           : real = 0.0
+$End
+
+$Resource_type a_Batch : temporary
+$Parameters
+  number             : integer
+  conv_number        : such_as a_Conveyer.number
+  inter_dist         : real = 0.0
+  accepting_quant    : integer
+  passing_quant      : integer
+  cur_quant          : integer
+  lap_number         : integer
+  beg_pos            : real
+  length             : real
+  state              : (moving, in_accepting)
+$End
+
+$Resource_type a_Detector : permanent
+$Parameters
+  number             : integer
+  conv_number        : such_as a_Conveyer.number
+  coord              : real
+  state              : (accum, nothing, batch) = nothing
+  switch_time        : real = -1.0
+  batch_number       : integer = 0
+$End
+
+$Resource_type a_Batch_to_show : permanent
+$Parameters
+  conv_number        : such_as a_Conveyer.number
+  batch_number       : such_as a_Batch.number = 0
+  state              : (free, busy) = free
+  lap_number         : integer = 0
+  beg_pos            : real
+  length             : real
+$End
+
+$Resource_type a_Machine : permanent
+$Parameters
+  capasity           : real
+  cur_rate           : real = 1.0
+  time_to_problem    : real = 0.0
+  proc_quant         : integer = 1
+  state              : (free, busy) = free
+  status             : (in_run, stop, broken) = in_run
+  switch_time        : real = 0.0
+  bot_count          : real = 0.0
+  problem_type_A     : (vis_sans_fin_forcee, etoile_de_sortie_desac,
+                        boite_couchee_sertisseuse, secu_carter_prot_perrier,
+                        ecran_de_prot_n6_ouvert, def_porte_sertisseuse_dr,
+                        ecran_de_prot_n2_ouvert, ecran_de_prot_n4_ouvert,
+                        securite_carte_volant_manu, ecran_de_prot_n3_ouvert,
+                        ecran_de_prot_n1_ouvert, au_pupitre_arm_mach_soutir,
+                        au_derriere_simonazzi, ecran_de_prot_n5_ouvert) =
+                        vis_sans_fin_forcee
+  problem_type_B     : (defaut_bord_decoupe, def_prod_et_decoupe_async_1,
+                        double_decoupe, prod_tombe_apres_stat_grou,
+                        prod_tombe_entree_machine, def_prod_et_decoupe_async_2,
+                        defaut_fardelage, prod_incor_chaine_pliage,
+                        prod_tombe_chaine_separ, def_limit_couple_barquet,
+                        lubrification, thermique_disjoncte) =
+                        defaut_bord_decoupe
+$End
+
+{$Resource_type a_Line : permanent
+$Parameters
+  quant_10000  : integer = 0
+  quant_1      : integer = 0
+$End}

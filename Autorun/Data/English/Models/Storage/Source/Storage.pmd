@@ -1,0 +1,9 @@
+$Results
+  Presence_of_refrigerators  : watch_par Warehouse_1.Presence
+  Storage_fee                : get_value Warehouse_1.Storage_fee
+  Nonsales_fee               : get_value Warehouse_1.Nonsales_fee
+  Deliveries_fee             : get_value Warehouse_1.Deliveries_fee
+  Summary_fee                : get_value Warehouse_1.Storage_fee +
+                                        Warehouse_1.Nonsales_fee +
+                                        Warehouse_1.Deliveries_fee
+$End

@@ -1,0 +1,9 @@
+$Resource_type Warehouses : permanent
+$Parameters
+  Presence            : integer
+  Order_for_day       : integer = 0
+  State               : (Normal, Wait_delivery) = Normal
+  Storage_fee         : real = 0.0
+  Nonsales_fee        : real = 0.0
+  Deliveries_fee      : real = 0.0
+$End

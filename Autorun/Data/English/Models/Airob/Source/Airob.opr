@@ -1,0 +1,12 @@
+$Operations
+    Rule1   : Change2
+    Operat1 : FreeTop  0.05
+    Operat2 : FreeTop2 0.05
+    Rule3   : Change3
+    Operat5 : FrPlace  0.05
+    Operat3 : FrSide   0.05
+    Rule2   : Change1
+    Operat4 : FrSide2  0.25
+    Operat6 : Last     0.1
+    Operat0 : Add      0.26
+$End

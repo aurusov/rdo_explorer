@@ -1,0 +1,14 @@
+$Operations
+  Unused_generations_erasing         : Unused_generations_erasing_pat
+  Initial_generation_creating        : Initial_generation_creating_pat
+  End_of_initial_generation_creating : End_of_initial_generation_creating_pat
+  FF_calculation                     : FF_calculation_pat
+  End_of_FF_calculation              : End_of_FF_calculation_pat
+  Reproduction                       : Reproduction_pat
+  End_of_reproduction                : End_of_reproduction_pat
+  Crossover                          : Crossover_pat
+  Pairs_selection                    : Pairs_selection_pat
+  End_of_crossover                   : End_of_crossover_pat
+  Mutation                           : Mutation_pat
+  End_of_mutation                    : End_of_mutation_pat
+$End

@@ -1,0 +1,24 @@
+Model_name    = Airob
+
+Resource_file  = Airob
+OprIev_file    = Airob
+Frame_file     = Airob
+Statistic_file = Airob
+Results_file   = Airob
+Trace_file     = Airob
+Show_mode = Animation
+{Show_rate = 2.0}
+Run_StartTime = 0.0
+{Trace_StartTime = 0.0
+Trace_EndTime=10.0E+30}
+Terminate_if  Time_now > 0.26
+Const1 = C
+Const2 = E
+Rez.Solid1 = C
+Rez.Solid2 = E
+Rez.Ox = 410
+Rez.Oy = 320
+Rez.Oz = 130
+ 
+
+

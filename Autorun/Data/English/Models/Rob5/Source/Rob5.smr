@@ -1,0 +1,17 @@
+Model_name = Rob5
+
+Resource_file  = Rob5
+OprIev_file    = Rob5
+Frame_file     = Rob5
+Statistic_file = Rob5
+Results_file   = Rob5
+Trace_file     = Rob5
+Show_mode      = Animation
+Frame_number   = 1
+Show_rate      = 10000.0
+
+Terminate_if  Time_now >= 10.0
+
+{Break_point  Point_1  Time_now >= 0.0485}
+{Break_point  Point_2  Time_now >= 0.15  }
+

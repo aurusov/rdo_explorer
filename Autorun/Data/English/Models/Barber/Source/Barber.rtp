@@ -1,0 +1,16 @@
+$Resource_type A_BarberShop : permanent
+$Parameters
+  Entry                        : (no_klients, client_arrival)
+  Number_of_clients_in_a_queue : integer
+  Busyness_of_hairdresser      : (Free, Busy) = Free
+  Number_of_clients_serviced   : integer
+$End
+
+$Resource_type Clients : permanent
+$Parameters
+  Number               : integer
+  Status               : (no, in_a_queue, haircutting) = no
+  Time_of_arrival      : real = 0.0
+  Position_in_a_queue  : integer = 0
+$End
+

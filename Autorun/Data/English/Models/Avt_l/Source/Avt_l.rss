@@ -1,0 +1,4 @@
+$Resources
+Automaton      : System { trace }  1  2 Action Penalty * * * *
+
+$End

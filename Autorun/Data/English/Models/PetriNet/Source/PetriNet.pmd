@@ -1,0 +1,13 @@
+$Results
+  Machine_tool_1_Busy       : watch_state   Place_2.Pic > 0
+  Machine_tool_1_Free       : watch_state   Place_2.Pic = 0
+  Machine_tool_2_Busy       : watch_state   Place_3.Pic > 0
+  Machine_tool_2_Free       : watch_state   Place_3.Pic = 0
+  Pallet_1_Quantity         : watch_par     Place_1.Pic
+  Pallet_2_Quantity         : watch_par     Place_4.Pic
+  Robot_Quantity            : watch_par     Place_5.Pic
+  Pallet_1_Ending           : get_value     Place_1.Pic
+  Pallet_2_Ending           : get_value     Place_4.Pic
+  Machine_tool_1_Ending     : get_value     Place_2.Pic
+  Machine_tool_2_Ending     : get_value     Place_3.Pic
+$End

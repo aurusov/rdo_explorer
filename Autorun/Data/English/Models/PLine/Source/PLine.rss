@@ -1,0 +1,111 @@
+$Resources
+  Conveyer_1 : a_Conveyer  1  1  4.25  100   2   1  4500.0 {3840.0}   *  *  *  *  *  *    *     *  *
+  Conveyer_2 : a_Conveyer  2  4  6.5     1   3   4  1100.0 { 900.0}   *  *  *  *  *  *    *     *  *
+  Conveyer_3 : a_Conveyer  3  1  4.25    2   0   1  4440.0   *  *  *  *  *  *    *     *  *
+  Conveyer_4 : a_Conveyer  4  1  4.25  101   5   1  4500.0 {3840.0}   *  *  *  *  *  *    *     *  *
+  Conveyer_5 : a_Conveyer  5  4  6.5     4   6   4  1100.0 { 900.0}   *  *  *  *  *  *    *     *  *
+  Conveyer_6 : a_Conveyer  6  1  4.25    5   0   1  4440.0   *  *  *  *  *  *    *     *  *
+
+  Conveyer_A : a_Conveyer  {trace} 100  1  1.0     0   1   0  3168.0   *  *  0  *  *  *  moving  *  *
+  Conveyer_B : a_Conveyer  {trace} 101  1  1.0     0   4   0  3168.0   *  *  0  *  *  *  moving  *  *
+
+  Detector_1_1 : a_Detector   1   1    0.300   *   *   *
+  Detector_2_1 : a_Detector   2   1    3.950   *   *   *
+  Detector_1_2 : a_Detector   3   2    0.325   *   *   *
+  Detector_2_2 : a_Detector   4   2    2.925   *   *   *
+  Detector_3_2 : a_Detector   5   2    6.175   *   *   *
+  Detector_1_3 : a_Detector   6   3    0.300   *   *   *
+  Detector_2_3 : a_Detector   7   3    3.950   *   *   *
+  Detector_1_4 : a_Detector  11   4    0.300   *   *   *
+  Detector_2_4 : a_Detector  12   4    3.950   *   *   *
+  Detector_1_5 : a_Detector  13   5    0.325   *   *   *
+  Detector_2_5 : a_Detector  14   5    2.925   *   *   *
+  Detector_3_5 : a_Detector  15   5    6.175   *   *   *
+  Detector_1_6 : a_Detector  16   6    0.300   *   *   *
+  Detector_2_6 : a_Detector  17   6    3.950   *   *   *
+
+  Machine_A  : a_Machine   48000.0  1.0   0.13   *   *  stop  *   *   *   *
+  Machine_B  : a_Machine   48000.0  1.0   0.13   *   *  stop  *   *   *   *
+  Machine_C  : a_Machine   48000.0  1.0   0.13   *   *  stop  *   *   *   *
+
+  Batch_to_show_1_1  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_2  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_3  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_4  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_5  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_6  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_7  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_8  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_9  : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_1_10 : a_Batch_to_show   1   *   free   *   0.0   0.0
+  Batch_to_show_2_1  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_2  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_3  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_4  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_5  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_6  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_7  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_8  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_9  : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_10 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_11 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_12 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_13 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_14 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_15 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_16 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_17 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_18 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_19 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_2_20 : a_Batch_to_show   2   *   free   *   0.0   0.0
+  Batch_to_show_3_1  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_2  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_3  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_4  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_5  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_6  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_7  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_8  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_9  : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_3_10 : a_Batch_to_show   3   *   free   *   0.0   0.0
+  Batch_to_show_4_1  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_2  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_3  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_4  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_5  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_6  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_7  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_8  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_9  : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_4_10 : a_Batch_to_show   4   *   free   *   0.0   0.0
+  Batch_to_show_5_1  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_2  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_3  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_4  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_5  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_6  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_7  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_8  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_9  : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_10 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_11 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_12 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_13 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_14 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_15 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_16 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_17 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_18 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_19 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_5_20 : a_Batch_to_show   5   *   free   *   0.0   0.0
+  Batch_to_show_6_1  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_2  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_3  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_4  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_5  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_6  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_7  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_8  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_9  : a_Batch_to_show   6   *   free   *   0.0   0.0
+  Batch_to_show_6_10 : a_Batch_to_show   6   *   free   *   0.0   0.0
+$End

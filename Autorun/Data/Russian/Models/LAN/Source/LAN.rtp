@@ -1,0 +1,15 @@
+$Resource_type Маркер:permanent
+$Parameters
+	Где:		integer[0..4]
+	Владелец:	such_as Маркер.Где
+	Занятость:	(Занят,Свободен) = Свободен
+	Кому:		such_as Маркер.Где
+	Вес:		integer[0..20] = 0
+	Сост:		(Вход,Выход,Недоступ) = Выход
+$End
+
+$Resource_type Абонент:permanent
+$Parameters
+	Номер:		such_as Маркер.Где
+	Запрос:		(Есть,Нет)=Нет
+$End

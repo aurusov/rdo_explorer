@@ -1,0 +1,10 @@
+$Resources
+  Cash_equipment_r1 : Cash_equipment_pt * first_
+  Cash_equipment_r2 : Cash_equipment_pt * second
+  Credit_card_machine_r1 : Credit_card_machine_pt * first_
+  Credit_card_machine_r2 : Credit_card_machine_pt * second
+  PC_r : PC_pt *
+  Network_lan : Network_pt 3
+  Network_wan : Network_pt 2
+  Number_r : Number_pt * * * * *
+$End

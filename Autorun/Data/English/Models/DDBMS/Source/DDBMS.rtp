@@ -1,0 +1,108 @@
+$Resource_type Transaction_Time_Statistics:temporary
+$Parameters
+	Num:integer
+	Pr:integer[1..256]
+	Soc:integer[1..256]
+	Cr_time:real
+$End
+
+$Resource_type Transaction:temporary
+$Parameters
+	Num:integer
+	Pr:integer
+	Soc:integer[1..256]
+	Qu:integer
+	Act: ( I, Q, R, W, B, M, P)
+	Ct:integer
+	Kin:integer 
+	Np:integer
+	Who: (M, F, S)
+$End
+
+$Resource_type Counter:permanent
+$Parameters
+	Who: ( A, F, S )
+	Num:integer[1..256]
+	C_t:integer = 0
+	C_n:integer = 0
+	C_q:integer = 0
+	C_p1:integer = 0	
+	C_p2:integer = 0
+	C_p3:integer = 0
+$End
+
+$Resource_type RegFl: permanent
+$Parameters
+	Who: such_as Counter.Who
+	Num:integer[1..256]
+	Fl_I:integer[0..1] = 0
+	Fl_O:integer[0..1] = 0
+	En_f:integer[0..1] = 1
+	Sum:integer[0..256] = 0
+$End
+
+$Resource_type System:permanent
+$Parameters
+	Fl_g:integer[-1..1] = 0
+	N_g:integer[0..256] = 0
+	T_f: integer [0..1] = 0
+	F_c: integer = 1
+	Q_c: integer = 0
+	Q_f: integer [-1..1] = 0
+	Q_s:integer = 0
+	Ch_n:integer[1..256] = 1
+	Nf:integer = 0
+$End
+
+$Resource_type AnSystem:permanent
+$Parameters
+	T_f:integer[0..256] = 0
+	Pz_c:integer[0..256] = 1
+	M_f:integer[0..1] = 0
+	M_c:integer[0..256] = 0
+	O_c:integer[1..256] = 1
+	An_f:integer[0..256]=0
+	X_ct: integer = 0
+	Lev: integer = 0
+$End
+
+$Resource_type File:permanent
+$Parameters
+	Num:integer[1..256]
+	AccV:integer = 0
+	Red: (On, Off ) = Off
+	Green: (On, Off ) = Off 
+$End
+
+$Resource_type Station:permanent
+$Parameters
+	Num:integer[1..256]
+	Con: ( F, R, P) = F 
+	Wei:integer = 0
+	Inq:integer = 0
+$End
+
+$Resource_type Transaction_An:permanent
+$Parameters
+	Num:integer = 0
+	Pr:integer[1..256] = 1
+	Soc:integer[1..256] = 1
+	Act:such_as Transaction.Act = I
+	Cr_time:real = 0.0
+	Qu:integer = 0
+	Kin:integer = 1
+	F_c: integer = 0
+	Ct:integer = 0
+	Cn:integer = 0
+	Pz_c:integer = 0
+$End
+
+$Resource_type SubQ:permanent
+$Parameters
+	Num:integer
+	Lev: integer = 0
+	X_c: integer = 1
+	Y_c: integer = 1
+	Con: (Off, EX, PN, PS, PE) = Off
+	Arr: ( Off, MN, MS, ME ) = Off	
+$End	

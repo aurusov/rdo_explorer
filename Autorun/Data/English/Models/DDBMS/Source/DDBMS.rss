@@ -1,0 +1,72 @@
+$Resources
+	Ct1	:Counter	 	A 1 * * * * * * 
+	Ct2	:Counter	 	A 2 * * * * * * 
+	Ct3	:Counter	 	A 3 * * * * * * 
+	Ct4	:Counter	 	A 4 * * * * * * 
+	Ct5	:Counter	 	A 5 * * * * * * 
+	Ct6	:Counter	 	A 6 * * * * * * 
+
+	Ctr1	:Counter	 	F 1 * * * * * * 
+	Ctr2	:Counter	 	F 2 * * * * * * 
+	Ctr3	:Counter	 	F 3 * * * * * * 
+	Ctr4	:Counter	 	F 4 * * * * * * 
+	Ctr5	:Counter	 	F 5 * * * * * * 
+	Ctr6	:Counter	 	F 6 * * * * * * 
+
+	Cnt1	:Counter	 	S 1 * * * * * * 
+	Cnt2	:Counter	 	S 2 * * * * * * 
+	Cnt3	:Counter	 	S 3 * * * * * * 
+	Cnt4	:Counter	 	S 4 * * * * * * 
+	Cnt5	:Counter	 	S 5 * * * * * * 
+	Cnt6	:Counter	 	S 6 * * * * * * 
+
+	RF1	:RegFl {trace}	A 1 * * * *
+	RF2	:RegFl {trace}	A 2 * * * *
+	RF3	:RegFl {trace}	A 3 * * * *
+	RF4	:RegFl {trace}	A 4 * * * *
+	RF5	:RegFl {trace}	A 5 * * * *
+	RF6	:RegFl {trace}	A 6 * * * *
+
+	RFF1	:RegFl {trace}	F 1 * * * *
+	RFF2	:RegFl {trace}	F 2 * * * *
+	RFF3	:RegFl {trace}	F 3 * * * *
+	RFF4	:RegFl {trace}	F 4 * * * *
+	RFF5	:RegFl {trace}	F 5 * * * *
+	RFF6	:RegFl {trace}	F 6 * * * *
+
+	RFL1	:RegFl {trace}	S 1 * * * *
+	RFL2	:RegFl {trace}	S 2 * * * *
+	RFL3	:RegFl {trace}	S 3 * * * *
+	RFL4	:RegFl {trace}	S 4 * * * *
+	RFL5	:RegFl {trace}	S 5 * * * *
+	RFL6	:RegFl {trace}	S 6 * * * *
+
+	Fi1	:File	{trace}	1 * * *
+	Fi2	:File	{trace}	2 * * *	
+	Fi3	:File	{trace}	3 * * *	
+	Fi4	:File	{trace}	4 * * *	
+	Fi5	:File	{trace}	5 * * *	
+	Fi6	:File	{trace}	6 * * *	
+
+	St1	:Station	{trace}	1 * * *
+	St2	:Station	{trace}	2 * * *	
+	St3	:Station	{trace}	3 * * *	
+	St4	:Station	{trace}	4 * * *	
+	St5	:Station	{trace}	5 * * *	
+	St6	:Station	{trace}	6 * * *	
+
+	Sy	:System	{trace}	* * * * * * * * *
+	Sy1	:AnSystem	{trace}	* * * * * * * *
+	AT	: Transaction_An {trace}	* * * * * * * * * * *
+	SQ1	:SubQ	{trace}	1 * * * * *
+	SQ2	:SubQ	{trace}	2 * * * * *
+	SQ3	:SubQ	{trace}	3 * * * * *
+	SQ4	:SubQ	{trace}	4 * * * * *
+	SQ5	:SubQ	{trace}	5 * * * * *
+	SQ6	:SubQ	{trace}	6 * * * * *
+	SQ7	:SubQ	{trace}	7 * * * * *
+	SQ8	:SubQ	{trace}	8 * * * * *
+	SQ9	:SubQ	{trace}	9 * * * * *
+	SQ10	:SubQ	{trace}	10 * * * * *
+	SQF	:SubQ		-1 -1 * * * *
+$End

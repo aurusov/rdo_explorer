@@ -1,0 +1,12 @@
+$Operations
+  Appearance_customer_In_system          : Appearance_customer_in_system_ie
+  Estimate_of_purchase_and_come_in_order : Estimate_of_purchase_and_come_in_order_pat
+  Identification_of_customer             : Identification_of_customer_pat
+  Check_payment                          : Check_payment_pat
+  Coppies_of_accounts                    : Coppies_of_accounts_pat
+  Update_of_customer_file                : Update_of_customer_file_pat
+  Writing_in_credit_card                 : Writing_in_credit_card_pat
+  Forming_of_order                       : Forming_of_order_pat
+  Ending_of_work                         : Ending_of_work_rul
+  Permission_is_absent                   : Permission_is_absent_rul
+$End

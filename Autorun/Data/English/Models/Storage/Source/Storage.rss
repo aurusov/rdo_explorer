@@ -1,0 +1,3 @@
+$Resources
+  Warehouse_1  : Warehouses  trace  100 * * * * *
+$End

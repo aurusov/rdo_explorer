@@ -1,0 +1,72 @@
+$Resources
+	Ct1	:Счетчик	 	A 1 * * * * * * 
+	Ct2	:Счетчик	 	A 2 * * * * * * 
+	Ct3	:Счетчик	 	A 3 * * * * * * 
+	Ct4	:Счетчик	 	A 4 * * * * * * 
+	Ct5	:Счетчик	 	A 5 * * * * * * 
+	Ct6	:Счетчик	 	A 6 * * * * * * 
+
+	Ctr1	:Счетчик	 	F 1 * * * * * * 
+	Ctr2	:Счетчик	 	F 2 * * * * * * 
+	Ctr3	:Счетчик	 	F 3 * * * * * * 
+	Ctr4	:Счетчик	 	F 4 * * * * * * 
+	Ctr5	:Счетчик	 	F 5 * * * * * * 
+	Ctr6	:Счетчик	 	F 6 * * * * * * 
+
+	Cnt1	:Счетчик	 	S 1 * * * * * * 
+	Cnt2	:Счетчик	 	S 2 * * * * * * 
+	Cnt3	:Счетчик	 	S 3 * * * * * * 
+	Cnt4	:Счетчик	 	S 4 * * * * * * 
+	Cnt5	:Счетчик	 	S 5 * * * * * * 
+	Cnt6	:Счетчик	 	S 6 * * * * * * 
+
+	RF1	:RegFl {trace}	A 1 * * * *
+	RF2	:RegFl {trace}	A 2 * * * *
+	RF3	:RegFl {trace}	A 3 * * * *
+	RF4	:RegFl {trace}	A 4 * * * *
+	RF5	:RegFl {trace}	A 5 * * * *
+	RF6	:RegFl {trace}	A 6 * * * *
+
+	RFF1	:RegFl {trace}	F 1 * * * *
+	RFF2	:RegFl {trace}	F 2 * * * *
+	RFF3	:RegFl {trace}	F 3 * * * *
+	RFF4	:RegFl {trace}	F 4 * * * *
+	RFF5	:RegFl {trace}	F 5 * * * *
+	RFF6	:RegFl {trace}	F 6 * * * *
+
+	RFL1	:RegFl {trace}	S 1 * * * *
+	RFL2	:RegFl {trace}	S 2 * * * *
+	RFL3	:RegFl {trace}	S 3 * * * *
+	RFL4	:RegFl {trace}	S 4 * * * *
+	RFL5	:RegFl {trace}	S 5 * * * *
+	RFL6	:RegFl {trace}	S 6 * * * *
+
+	Fi1	:Файл	{trace}	1 * * *
+	Fi2	:Файл	{trace}	2 * * *	
+	Fi3	:Файл	{trace}	3 * * *	
+	Fi4	:Файл	{trace}	4 * * *	
+	Fi5	:Файл	{trace}	5 * * *	
+	Fi6	:Файл	{trace}	6 * * *	
+
+	St1	:Станция 	{trace}	1 * * *
+	St2	:Станция 	{trace}	2 * * *	
+	St3	:Станция 	{trace}	3 * * *	
+	St4	:Станция 	{trace}	4 * * *	
+	St5	:Станция 	{trace}	5 * * *	
+	St6	:Станция 	{trace}	6 * * *	
+
+	Sy	:Система	{trace}	* * * * * * * * *
+	Sy1	:Обмен_система	{trace}	* * * * * * * *
+	AT	: Транзакция_An {trace}	* * * * * * * * * * *
+	SQ1	:SubQ	{trace}	1 * * * * *
+	SQ2	:SubQ	{trace}	2 * * * * *
+	SQ3	:SubQ	{trace}	3 * * * * *
+	SQ4	:SubQ	{trace}	4 * * * * *
+	SQ5	:SubQ	{trace}	5 * * * * *
+	SQ6	:SubQ	{trace}	6 * * * * *
+	SQ7	:SubQ	{trace}	7 * * * * *
+	SQ8	:SubQ	{trace}	8 * * * * *
+	SQ9	:SubQ	{trace}	9 * * * * *
+	SQ10	:SubQ	{trace}	10 * * * * *
+	SQF	:SubQ		-1 -1 * * * *
+$End

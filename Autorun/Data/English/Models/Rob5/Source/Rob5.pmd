@@ -1,0 +1,39 @@
+$Results
+  AP_Free             : watch_state  AP.Busyness = Free
+  AP_Busy             : watch_state  AP.Busyness = Busy
+  AP_Shaft_is_loaded  : watch_state  AP.What_is_loaded = Shaft_is_loaded
+  AP_Loaded           : watch_state  AP.What_is_loaded = Loaded
+  AP_Processed        : watch_state  AP.What_is_loaded = Processed
+  AP_Unloaded         : watch_state  AP.What_is_loaded = Unloaded
+  GM_Free             : watch_state  GM.Busyness = Free
+  GM_Busy             : watch_state  GM.Busyness = Busy
+  GM_Repairing        : watch_state  GM.Busyness = Repairing
+  TR_Free             : watch_state  TR.Busyness = Free
+  TR_Moving_empty     : watch_state  TR.Busyness = Moving_empty
+  TR_Moving_loaded    : watch_state  TR.Busyness = Moving_loaded
+  TR_Loading          : watch_state  TR.Busyness = Loading
+  TR_Unloading        : watch_state  TR.Busyness = Unloading
+
+  Fan_WPI             : watch_quant  Parts  Parts.Kind = a_fan
+  Fan_flow_time       : watch_value  Parts  Parts.Kind = a_fan
+                                            Time_now - Parts.Arrival_time
+  Shaft_WPI           : watch_quant  Parts  Parts.Kind = a_shaft
+  Rotor_WPI           : watch_quant  Parts  Parts.Kind = a_rotor
+  Rotor_flow_time     : watch_value  Parts  Parts.Kind = a_rotor
+                                            Time_now - Parts.Arrival_time
+  Rotor_time_in_CP    : watch_value  Parts  Parts.Kind = a_rotor
+                                            Parts.Time_on_CP
+
+  C1_Quantity         : watch_par    C1.Quantity_of_parts
+  C2_Quantity         : watch_par    C2.Quantity_of_parts
+  C3_Quantity         : watch_par    C3.Quantity_of_parts
+  CP_Quantity         : watch_par    CP.Quantity_of_parts
+
+  Rotors_in_CP        : watch_quant  Parts  Parts.Kind = a_rotor and
+                                            Parts.Location = CoolPos
+
+  C1_At_the_end       : get_value    C1.Quantity_of_parts
+  C2_At_the_end       : get_value    C2.Quantity_of_parts
+  C3_At_the_end       : get_value    C3.Quantity_of_parts
+$End
+

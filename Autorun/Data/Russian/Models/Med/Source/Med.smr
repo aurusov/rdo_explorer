@@ -1,0 +1,12 @@
+Model_name      = Med
+ 
+Resource_file   = Med
+OprIev_file     = Med
+Frame_file      = Med
+Statistic_file  = Med
+Results_file    = Med
+{ Trace_file      = Med }
+Show_mode       = Animation 
+Show_rate       = 100000.0 
+ 
+Terminate_if  Time_now  >= 24*60*60.0

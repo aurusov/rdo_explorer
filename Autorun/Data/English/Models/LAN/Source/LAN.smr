@@ -1,0 +1,13 @@
+Model_name     = LAN
+
+Resource_file  = LAN
+OprIev_file    = LAN
+Frame_file     = LAN
+Statistic_file = LAN
+Results_file   = LAN
+{ Trace_file     = LAN }
+Show_mode      = Animation
+Frame_number   = 1
+Show_rate      = 1000.0
+
+Terminate_if Time_now > 480.0

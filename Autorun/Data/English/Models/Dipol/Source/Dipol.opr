@@ -1,0 +1,245 @@
+$Operations
+  Operation_1   : Transfer_on_half_fin_prod_area  0.0069
+  Operation_2   : Work_of_half_fin_prod_area      0.0180
+  Operation_3   : Transfer_by_crane_to_band_forwarding_device  0.0106
+                 Band_forwarding_device_31  Shelving_12
+                 _Half_finished_product_area  _Band_forwarding_device31
+  Operation_4   : Transfer_by_crane_to_band_forwarding_device  0.0117
+                 Band_forwarding_device_32  Shelving_13
+                 _Half_finished_product_area  _Band_forwarding_device32
+  Operation_5   : Transfer_by_crane_to_shelving  0.0108
+                 Band_forwarding_device_31  Shelving_12
+                 _Half_finished_product_area  _Shelving12
+  Operation_6   : Transfer_by_crane_to_shelving  0.0111
+                 Band_forwarding_device_32  Shelving_13
+                 _Half_finished_product_area  _Shelving13
+  Operation_7   : Transfer_from_shelving_to_band_forwarding_device  0.0058
+                 Band_forwarding_device_31  Shelving_12  _Shelving12
+                 _Band_forwarding_device31
+  Operation_8   : Transfer_from_shelving_to_band_forwarding_device  0.0058
+                 Band_forwarding_device_32  Shelving_13  _Shelving13
+                 _Band_forwarding_device32
+  Operation_9   : Work_of_band_forwarding_device  0.0014
+                 Band_forwarding_device_31  Press_2
+  Operation_10  : Work_of_band_forwarding_device  0.0014
+                 Band_forwarding_device_32  Press_2222
+  Operation_11  : Work_of_presses  0.0205  Smoothing_out_16  Press_2
+                 82  41
+  Operation_12  : Work_of_presses  0.0205  Smoothing_out_1616  Press_2222
+                 82  41
+  Operation_13  : Packing_in_casette  0.0205  Smoothing_out_16  Casette_17
+                 50
+  Operation_14  : Packing_in_casette  0.0205  Smoothing_out_1616
+                 Casette_171  50
+  Operation_15  : Transfer_to_the_store_block  0.0200
+                 Robot_125  Robot_225  Casette_17  Block_3333  50
+  Operation_16  : Transfer_to_the_store_block  0.0200
+                 Robot_125  Robot_225  Casette_171  Block_3333  50
+  Operation_17  : Transfer_from_device_of_packing_in_casette_to_robot 0.0208
+                 Robot_125  Casette_17  Case17
+  Operation_18  : Transfer_from_device_of_packing_in_casette_to_robot 0.0208
+                 Robot_225  Casette_17  Case17
+  Operation_19  : Transport_from_store_house3333_to_robot   0.0200
+                 Robot_125
+  Operation_20  : Transport_from_store_house3333_to_robot   0.0200
+                 Robot_225
+  Operation_21  : Transfer_from_device_of_packing_in_casette_to_robot 0.0208
+                 Robot_125  Casette_171  Case171
+  Operation_22  : Transfer_from_device_of_packing_in_casette_to_robot 0.0208
+                 Robot_225  Casette_171  Case171
+  Operation_23  : Transfer_by_robot_to_reception_device2526 0.0144
+                 Robot_125
+  Operation_24  : Transfer_by_robot_to_reception_device2526 0.0144
+                 Robot_225
+  Operation_25  : Reception_of_parts_by_robots_AMR26  0.0097  Robot_126
+  Operation_26  : Reception_of_parts_by_robots_AMR26  0.0097  Robot_226
+  Operation_27  : Transfer_by_robot_to_man  0.0111  Robot_126
+                 Man_1  Reception_device2526  Man1
+  Operation_28  : Transfer_by_robot_to_man  0.0111  Robot_226
+                 Man_1  Reception_device2526  Man1
+  Operation_29  : Work_of_the_man1  0.0014
+  Operation_30  : Work_of_smooth_out_machine  0.5
+  Operation_31  : Unloading_from_smooth_out_machine  0.0833  Robot_126
+  Operation_32  : Unloading_from_smooth_out_machine  0.0833  Robot_226
+  Operation_33  : Transfer_by_robot_to_man2  0.0111  Robot_126
+  Operation_34  : Transfer_by_robot_to_man2  0.0111  Robot_226
+  Operation_35  : Work_of_the_man2_with_washing_machine19  0.0014
+  Operation_36  : Work_of_washing_machine  0.0250  Washing_19  Loaded
+                 The_end_of_washing
+  Operation_37  : Unloading_from_washing_machine19  0.0833  Robot_126
+  Operation_38  : Unloading_from_washing_machine19  0.0833  Robot_226
+  Operation_39  : Transfer_to_assembling  0.0111  Assembling_122
+                 Robot_126  Assembling_place122
+  Operation_40  : Transfer_to_assembling  0.0111  Assembling_222
+                 Robot_126  Assembling_place222
+  Operation_41  : Transfer_to_assembling  0.0111  Assembling_322
+                 Robot_126  Assembling_place322
+  Operation_42  : Transfer_to_assembling  0.0111  Assembling_422
+                 Robot_126  Assembling_place422
+  Operation_43  : Transfer_to_assembling  0.0111  Assembling_122
+                 Robot_226  Assembling_place122
+  Operation_44  : Transfer_to_assembling  0.0111  Assembling_222
+                 Robot_226  Assembling_place222
+  Operation_45  : Transfer_to_assembling  0.0111  Assembling_322
+                 Robot_226  Assembling_place322
+  Operation_46  : Transfer_to_assembling  0.0111  Assembling_422
+                 Robot_226  Assembling_place422
+  Operation_47  : Work_of_the_assembling  0.2500  Assembling_122
+  Operation_48  : Work_of_the_assembling  0.2500  Assembling_222
+  Operation_49  : Work_of_the_assembling  0.2500  Assembling_322
+  Operation_50  : Work_of_the_assembling  0.2500  Assembling_422
+  Operation_51  : Reception_of_the_assembling  0.0097  Assembling_122  Robot_126
+                 Assembling_place122
+  Operation_52  : Reception_of_the_assembling  0.0097  Assembling_222  Robot_126
+                 Assembling_place222
+  Operation_53  : Reception_of_the_assembling  0.0097  Assembling_322  Robot_126
+                 Assembling_place322
+  Operation_54  : Reception_of_the_assembling  0.0097  Assembling_422  Robot_126
+                 Assembling_place422
+  Operation_55  : Reception_of_the_assembling  0.0097  Assembling_122  Robot_226
+                 Assembling_place122
+  Operation_56  : Reception_of_the_assembling  0.0097  Assembling_222  Robot_226
+                 Assembling_place222
+  Operation_57  : Reception_of_the_assembling  0.0097  Assembling_322  Robot_226
+                 Assembling_place322
+  Operation_58  : Reception_of_the_assembling  0.0097  Assembling_422  Robot_226
+                 Assembling_place422
+  Operation_59  : Transfer_to_the_store_house  0.0253  Robot_126  Block_2323
+                 Assembling_place122  Store_block2323  448
+                 Stand
+  Operation_60  : Transfer_to_the_store_house  0.0253  Robot_126  Block_2323
+                 Assembling_place222  Store_block2323  448
+                 Stand
+  Operation_61  : Transfer_to_the_store_house  0.0253  Robot_126  Block_2323
+                 Assembling_place322  Store_block2323  448
+                 Stand
+  Operation_62  : Transfer_to_the_store_house  0.0253  Robot_126  Block_2323
+                 Assembling_place422  Store_block2323  448
+                 Stand
+  Operation_63  : Transfer_to_the_store_house  0.0253  Robot_226  Block_2323
+                 Assembling_place122  Store_block2323  448
+                 Stand
+  Operation_64  : Transfer_to_the_store_house  0.0253  Robot_226  Block_2323
+                 Assembling_place222  Store_block2323  448
+                 Stand
+  Operation_65  : Transfer_to_the_store_house  0.0253  Robot_226  Block_2323
+                 Assembling_place322  Store_block2323  448
+                 Stand
+  Operation_66  : Transfer_to_the_store_house  0.0253  Robot_226  Block_2323
+                 Assembling_place422  Store_block2323  448
+                 Stand
+  Operation_67  : Transfer_to_the_conveyer  0.0125
+  Operation_68  : Work_of_the_conveyer  0.0003
+  Operation_69  : Work_of_the_scissors  0.0008
+  Operation_70  : Return_of_the_conveyer  0.0003
+  Operation_71  : Transfer_from_inp_table_to_band_forwarding_device  0.0125
+                 Band_forwarding_device_29  Shelving_10
+                 _Band_forwarding_device29
+  Operation_72  : Transfer_from_inp_table_to_band_forwarding_device  0.0108
+                 Band_forwarding_device_30  Shelving_11
+                 _Band_forwarding_device30
+  Operation_73  : Transfer_from_inp_table_to_shelving  0.0131
+                 Band_forwarding_device_29  Shelving_10
+                 _Shelving10
+  Operation_74  : Transfer_from_inp_table_to_shelving  0.0097
+                 Band_forwarding_device_30  Shelving_11
+                 _Shelving11
+  Operation_75  : Transfer_from_shelving_to_band_forwarding_device  0.0058
+                 Band_forwarding_device_29  Shelving_10  _Shelving10
+                 _Band_forwarding_device29
+  Operation_76  : Transfer_from_shelving_to_band_forwarding_device  0.0067
+                 Band_forwarding_device_30  Shelving_11  _Shelving11
+                 _Band_forwarding_device30
+  Operation_77  : Work_of_band_forwarding_device  0.0014
+                 Band_forwarding_device_29  Press_1
+  Operation_78  : Work_of_band_forwarding_device  0.0014
+                 Band_forwarding_device_30  Press_1111
+  Operation_79  : Work_of_presses  0.0085  Smoothing_out_14  Press_1
+                 51  17
+  Operation_80  : Work_of_presses  0.0085  Smoothing_out_1414  Press_1111
+                 51  17
+  Operation_81  : Packing_in_casette  0.0085  Smoothing_out_14  Casette_15
+                 40
+  Operation_82  : Packing_in_casette  0.0085  Smoothing_out_1414
+                 Casette_151  40
+  Operation_83  : Transfer_to_the_store_block  0.0200
+                 Robot_127  Robot_227  Casette_15  Block_3  40
+  Operation_84  : Transfer_to_the_store_block  0.0200
+                 Robot_127  Robot_227  Casette_151  Block_3  40
+  Operation_85  : Transfer_from_casset_to_robot_AMR27  0.0263
+                 Robot_127  Casette_15  Case15
+  Operation_86  : Transfer_from_casset_to_robot_AMR27  0.0263
+                 Robot_227  Casette_15  Case15
+  Operation_87  : Transfer_from_casset_to_robot_AMR27  0.0263
+                 Robot_127  Casette_151  Case151
+  Operation_88  : Transfer_from_casset_to_robot_AMR27  0.0263
+                 Robot_227  Casette_151  Case151
+  Operation_89  : Transfer_from_store_house3_to_robot  0.0200  Robot_127
+  Operation_90  : Transfer_from_store_house3_to_robot  0.0200  Robot_227
+  Operation_91  : Transfer_by_robot_to_man3  0.0167  Robot_127
+  Operation_92  : Transfer_by_robot_to_man3  0.0167  Robot_227
+  Operation_93  : Work_of_the_man3_with_washing_machine  0.0011
+                 Wait_loading  Loaded  Busy
+                 Load_in_machine
+  Operation_94  : Work_of_washing_machine  0.0263  Washing_00  Loaded
+                 The_end_of_washing
+  Operation_95  : Unloading_from_the_washing_mchine  0.0833  Robot_127
+  Operation_96  : Unloading_from_the_washing_mchine  0.0833  Robot_227
+  Operation_97  : Transfer_by_robot_to_recept_device27_28  0.0167
+                 Robot_127  Reception_2728  Man3  Reception_device2728
+  Operation_98  : Transfer_by_robot_to_recept_device27_28  0.0167
+                 Robot_227  Reception_2728  Man3  Reception_device2728
+  Operation_99  : Reception_of_details_by_robots_AMR28  0.0083  Robot_128
+  Operation_100 : Reception_of_details_by_robots_AMR28  0.0083  Robot_228
+  Operation_101 : Transfer_by_robot_to_man  0.0083  Robot_128
+                 Man_4  Reception_device2728  Man4
+  Operation_102 : Transfer_by_robot_to_man  0.0083  Robot_228
+                 Man_4  Reception_device2728  Man4
+  Operation_103 : Work_of_the_man__4  0.1667  Robot_128
+  Operation_104 : Work_of_the_man__4  0.1667  Robot_228
+  Operation_105 : Transfer_by_robot_to_man  0.0083  Robot_128
+                 Man_5  Man4  Man5
+  Operation_106 : Transfer_by_robot_to_man  0.0083  Robot_228
+                 Man_5  Man4  Man5
+  Operation_107 : Transfer_to_block23  0.0225  Robot_128
+  Operation_108 : Transfer_to_block23  0.0225  Robot_228
+  Operation_109 : Giving_out_from_block23  0.0225  Robot_128
+  Operation_110 : Giving_out_from_block23  0.0225  Robot_228
+  Operation_111 : Transfer_by_robot_to_man  0.0083  Robot_128
+                 Man_5  Store_block23  Man5
+  Operation_112 : Transfer_by_robot_to_man  0.0083  Robot_228
+                 Man_5  Store_block23  Man5
+  Operation_113 : Work_of_the_man__5  0.0833  Robot_128
+  Operation_114 : Work_of_the_man__5  0.0833  Robot_228
+  Operation_115 : Transfer_by_robot_to_recept_device27_28  0.0083
+                 Robot_128  Reception_2827  Man5  Reception_device2827
+  Operation_116 : Transfer_by_robot_to_recept_device27_28  0.0083
+                 Robot_228  Reception_2827  Man5  Reception_device2827
+  Operation_117 : Transfer_to_second_washing_machine  0.0167  Robot_127
+  Operation_118 : Transfer_to_second_washing_machine  0.0167  Robot_227
+  Operation_119 : The_man3_wait_second_time  0.0167  Robot_127
+  Operation_120 : The_man3_wait_second_time  0.0167  Robot_227
+  Operation_121 : Work_of_the_man3_with_washing_machine  0.0011
+                 Wait_second_loading  Loaded_for_the_second_time
+                 Man3_busy_with_washing_machine_for_the_second_time
+                 Load_in_washing_machine_for_the_second_time
+  Operation_122 : Work_of_washing_machine  0.0283  Washing_00
+                 Loaded_for_the_second_time
+                 The_end_of_second_washing
+  Operation_123 : Unloading_second_time_from_washing_machine  0.0833
+                 Robot_127
+  Operation_124 : Unloading_second_time_from_washing_machine  0.0833
+                 Robot_227
+  Operation_125 : Transfer_to_the_store_house  0.0295  Robot_127  Block_30
+                 Man3  Store_block3  392
+                 Stand_by_block30
+  Operation_126 : Transfer_to_the_store_house  0.0295  Robot_227  Block_30
+                 Man3  Store_block3  392
+                 Stand_by_block30
+  Operation_127 : Cutting_off_smooth_out_machine  0.0
+  Operation_128 : Work_piling  0.2500  Assembling_122
+  Operation_129 : Work_piling  0.2500  Assembling_222
+  Operation_130 : Work_piling  0.2500  Assembling_322
+  Operation_131 : Work_piling  0.2500  Assembling_422
+$End
+

@@ -1,0 +1,32 @@
+$Results
+  Tug_utilisation                : watch_state  Tug.Busyness = busy
+  Number_of_free_terminals       : watch_par    Port.Number_of_free_terminals
+  Delay_of_tankers_of_type_1     : watch_value  a_Tanker  a_Tanker.Type = type_1
+                                     Time_now - a_Tanker.Arrival_time
+  Delay_of_tankers_of_type_2     : watch_value  a_Tanker  a_Tanker.Type = type_2
+                                     Time_now - a_Tanker.Arrival_time
+  Delay_of_tankers_of_type_3     : watch_value  a_Tanker  a_Tanker.Type = type_3
+                                     Time_now - a_Tanker.Arrival_time
+  Number_of_tankers_on_road      : watch_quant  a_Tanker  a_Tanker.State = just_arrived
+  Time_when_storm                : watch_state  Port.Weather = there_is_storm
+  Time_when_no_storm             : watch_state  Port.Weather = there_is_no_storm
+  Delay_of_tankers_of_type_4     : watch_value  a_Tanker  a_Tanker.Type = type_4
+                                     Time_now - a_Tanker.Arrival_time
+  Time_on_road_of_type_1         : watch_value  a_Tanker  a_Tanker.Type = type_1
+                                     a_Tanker.Time_on_road
+  Time_of_filling_of_type_1      : watch_value  a_Tanker  a_Tanker.Type = type_1
+                                     a_Tanker.Time_of_filling
+  Time_on_road_of_type_2         : watch_value  a_Tanker  a_Tanker.Type = type_2
+                                     a_Tanker.Time_on_road
+  Time_of_filling_of_type_2      : watch_value  a_Tanker  a_Tanker.Type = type_2
+                                     a_Tanker.Time_of_filling
+  Time_on_road_of_type_3         : watch_value  a_Tanker  a_Tanker.Type = type_3
+                                     a_Tanker.Time_on_road
+  Time_of_filling_of_type_3      : watch_value  a_Tanker  a_Tanker.Type = type_3
+                                     a_Tanker.Time_of_filling
+  Time_on_road_of_type_4         : watch_value  a_Tanker  a_Tanker.Type = type_4
+                                     a_Tanker.Time_on_road
+  Time_of_filling_of_type_4      : watch_value  a_Tanker  a_Tanker.Type = type_4
+                                     a_Tanker.Time_of_filling
+$End
+

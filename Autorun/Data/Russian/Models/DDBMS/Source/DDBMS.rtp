@@ -1,0 +1,108 @@
+$Resource_type Статистика_Времени_Обработки : temporary
+$Parameters
+	Номер             : integer
+	Приоритет         : integer[1..256]
+	Источник_запроса  : integer[1..256]
+        Время_появления   : real
+$End
+
+$Resource_type Транзакция : temporary
+$Parameters
+	Номер            : integer
+	Приоритет        : integer
+	Источник_запроса : integer[1..256]
+	Номер_очереди    : integer
+	Состояние        : (I, Q, R, W, B, M, P)
+	Сч               : integer
+	Тип              : integer 
+	Ноп              : integer
+	Кто              : (M, F, S)
+$End
+
+$Resource_type Счетчик : permanent
+$Parameters
+	Кто    : ( A, F, S )
+	Номер  : integer[1..256]
+	C_t    : integer = 0
+	C_n    : integer = 0
+	C_q    : integer = 0
+	C_p1   : integer = 0
+        C_p2   : integer = 0
+	C_p3   : integer = 0
+$End
+
+$Resource_type RegFl: permanent
+$Parameters
+	Кто   : such_as Счетчик.Кто
+	Номер : integer[1..256]
+	Fl_I  : integer[0..1] = 0
+	Fl_O  : integer[0..1] = 0
+	En_f  : integer[0..1] = 1
+	Sum   : integer[0..256] = 0
+$End
+
+$Resource_type Система : permanent
+$Parameters
+	Fl_g : integer[-1..1] = 0
+	N_g  : integer[0..256] = 0
+	T_f  : integer [0..1] = 0
+	F_c  : integer = 1
+	Q_c  : integer = 0
+	Q_f  : integer [-1..1] = 0
+	Q_s  : integer = 0
+	Ch_n : integer[1..256] = 1
+	Nf   : integer = 0
+$End
+
+$Resource_type Обмен_система : permanent
+$Parameters
+	T_f  : integer[0..256] = 0
+	Pz_c : integer[0..256] = 1
+	M_f  : integer[0..1] = 0
+	M_c  : integer[0..256] = 0
+	O_c  : integer[1..256] = 1
+	An_f : integer[0..256]=0
+	X_ct : integer = 0
+	Lev  : integer = 0
+$End
+
+$Resource_type Файл : permanent
+$Parameters
+	Номер  : integer[1..256]
+	Доступ : integer = 0
+	Red    : (On, Off ) = Off
+	Green  : (On, Off ) = Off 
+$End
+
+$Resource_type Станция : permanent
+$Parameters
+	Номер        : integer[1..256]
+	Сост         : ( F, R, P) = F 
+	Объем_данных : integer = 0
+	Нал_запр     : integer = 0
+$End
+
+$Resource_type Транзакция_An:permanent
+$Parameters
+	Номер            : integer = 0
+	Приоритет        : integer[1..256] = 1
+	Источник_запроса : integer[1..256] = 1
+	Состояние        : such_as Транзакция.Состояние = I
+	Время_появления  : real = 0.0
+	Номер_очереди    : integer = 0
+	Тип              : integer = 1
+	F_c              : integer = 0
+	Сч               : integer = 0
+	Cn:integer = 0
+	Pz_c:integer = 0
+$End
+
+$Resource_type SubQ:permanent
+$Parameters
+	Номер : integer
+	Lev   : integer = 0
+	X_c   : integer = 1
+	Y_c   : integer = 1
+	Сост  : (Off, EX, PN, PS, PE) = Off
+	Arr   : ( Off, MN, MS, ME ) = Off	
+$End	

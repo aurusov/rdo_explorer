@@ -1,0 +1,134 @@
+$Operations
+  Machine_A_opr     : Machine_A_pat   5
+  Machine_B_opr     : Machine_B_pat   5
+  Machine_C_opr     : Machine_C_pat   5
+
+  Conveyer_accepting_3 : Conveyer_accepting_pat  3
+  Batch_passing_3      : Batch_passing_pat       3   2
+  Batch_creating_3     : Batch_creating_pat      3
+  Batch_cutting_3      : Batch_cutting_pat       3
+    Detector_to_accum_3     : Detector_to_accum_pat     3
+    Detector_to_nothing_3   : Detector_to_nothing_pat   3
+{    Detector_to_batch_6     : Detector_to_batch_pat       6 }
+    Detector_to_batch_7     : Detector_to_batch_pat       7
+{    Detector_to_end_batch_6 : Detector_to_end_batch_pat   6 }
+    Detector_to_end_batch_7 : Detector_to_end_batch_pat   7
+
+  Conveyer_accepting_6 : Conveyer_accepting_pat  6
+  Batch_passing_6      : Batch_passing_pat       6   2
+  Batch_creating_6     : Batch_creating_pat      6
+  Batch_cutting_6      : Batch_cutting_pat       6
+    Detector_to_accum_6     : Detector_to_accum_pat     6
+    Detector_to_nothing_6   : Detector_to_nothing_pat   6
+{    Detector_to_batch_16    : Detector_to_batch_pat       16 }
+    Detector_to_batch_17    : Detector_to_batch_pat       17
+{    Detector_to_end_batch_16 : Detector_to_end_batch_pat   16 }
+    Detector_to_end_batch_17 : Detector_to_end_batch_pat   17
+
+  Conveyer_accepting_1 : Conveyer_accepting_pat  1
+  Batch_passing_1      : Batch_passing_pat       1   0
+  Batch_creating_1     : Batch_creating_pat      1
+  Batch_cutting_1      : Batch_cutting_pat       1
+    Detector_to_accum_1     : Detector_to_accum_pat     1
+    Detector_to_nothing_1   : Detector_to_nothing_pat   1
+{    Detector_to_batch_1     : Detector_to_batch_pat       1 }
+    Detector_to_batch_2     : Detector_to_batch_pat       2
+{    Detector_to_end_batch_1 : Detector_to_end_batch_pat   1 }
+    Detector_to_end_batch_2 : Detector_to_end_batch_pat   2
+
+  Conveyer_accepting_4 : Conveyer_accepting_pat  4
+  Batch_passing_4      : Batch_passing_pat       4   0
+  Batch_creating_4     : Batch_creating_pat      4
+  Batch_cutting_4      : Batch_cutting_pat       4
+    Detector_to_accum_4     : Detector_to_accum_pat     4
+    Detector_to_nothing_4   : Detector_to_nothing_pat   4
+{    Detector_to_batch_11     : Detector_to_batch_pat       11 }
+    Detector_to_batch_12     : Detector_to_batch_pat       12
+{    Detector_to_end_batch_11 : Detector_to_end_batch_pat   11 }
+    Detector_to_end_batch_12 : Detector_to_end_batch_pat   12
+
+  Conveyer_accepting_2 : Conveyer_accepting_pat  2
+  Batch_passing_2      : Batch_passing_pat       2   2
+  Batch_creating_2     : Batch_creating_pat      2
+  Batch_cutting_2      : Batch_cutting_pat       2
+    Detector_to_accum_2     : Detector_to_accum_pat     2
+    Detector_to_nothing_2   : Detector_to_nothing_pat   2
+    Detector_to_batch_3     : Detector_to_batch_pat       3
+{    Detector_to_batch_4     : Detector_to_batch_pat       4}
+    Detector_to_batch_5     : Detector_to_batch_pat       5
+    Detector_to_end_batch_3 : Detector_to_end_batch_pat   3
+{    Detector_to_end_batch_4 : Detector_to_end_batch_pat   4}
+    Detector_to_end_batch_5 : Detector_to_end_batch_pat   5
+
+  Conveyer_accepting_5 : Conveyer_accepting_pat  5
+  Batch_passing_5      : Batch_passing_pat       5   2
+  Batch_creating_5     : Batch_creating_pat      5
+  Batch_cutting_5      : Batch_cutting_pat       5
+    Detector_to_accum_5     : Detector_to_accum_pat     5
+    Detector_to_nothing_5   : Detector_to_nothing_pat   5
+    Detector_to_batch_13     : Detector_to_batch_pat       13
+{    Detector_to_batch_14     : Detector_to_batch_pat       14}
+    Detector_to_batch_15     : Detector_to_batch_pat       15
+    Detector_to_end_batch_13 : Detector_to_end_batch_pat   13
+{    Detector_to_end_batch_14 : Detector_to_end_batch_pat   14}
+    Detector_to_end_batch_15 : Detector_to_end_batch_pat   15
+
+  Conveyer_moving   : Conveyer_moving_pat
+
+  Batch_erasing_detector : Batch_erasing_detector_pat
+  Batch_erasing         : Batch_erasing_pat
+
+  Machine_A_problem : Machine_A_problem_pat
+  Machine_B_problem : Machine_B_problem_pat
+  Machine_C_problem : Machine_C_problem_pat
+
+  Control_MA_stop_to_40   : Control_MA_stop_to_40_pat
+  Control_MA_40_to_stop   : Control_MA_40_to_stop_pat
+  Control_MA_40_to_80     : Control_MA_40_to_80_pat
+  Control_MA_80_to_40     : Control_MA_80_to_40_pat
+  Control_MA_80_to_stop   : Control_MA_80_to_stop_pat
+  Control_MA_80_to_100    : Control_MA_80_to_100_pat
+  Control_MA_100_to_80    : Control_MA_100_to_80_pat
+  Control_MA_100_to_40    : Control_MA_100_to_40_pat
+  Control_MA_100_to_stop  : Control_MA_100_to_stop_pat
+  Control_MA_100_to_120   : Control_MA_100_to_120_pat
+  Control_MA_120_to_100   : Control_MA_120_to_100_pat
+  Control_MA_120_to_80    : Control_MA_120_to_80_pat
+  Control_MA_120_to_40    : Control_MA_120_to_40_pat
+  Control_MA_120_to_stop  : Control_MA_120_to_stop_pat
+
+  Control_MB_stop_to_40   : Control_MB_stop_to_40_pat
+  Control_MB_40_to_stop   : Control_MB_40_to_stop_pat
+  Control_MB_40_to_80     : Control_MB_40_to_80_pat
+  Control_MB_80_to_40     : Control_MB_80_to_40_pat
+  Control_MB_80_to_stop   : Control_MB_80_to_stop_pat
+  Control_MB_80_to_100    : Control_MB_80_to_100_pat
+  Control_MB_100_to_80    : Control_MB_100_to_80_pat
+  Control_MB_100_to_40    : Control_MB_100_to_40_pat
+  Control_MB_100_to_stop  : Control_MB_100_to_stop_pat
+  Control_MB_100_to_120   : Control_MB_100_to_120_pat
+  Control_MB_120_to_100   : Control_MB_120_to_100_pat
+  Control_MB_120_to_80    : Control_MB_120_to_80_pat
+  Control_MB_120_to_40    : Control_MB_120_to_40_pat
+  Control_MB_120_to_stop  : Control_MB_120_to_stop_pat
+
+  Control_MC_stop_to_40   : Control_MC_stop_to_40_pat
+  Control_MC_40_to_stop   : Control_MC_40_to_stop_pat
+  Control_MC_40_to_80     : Control_MC_40_to_80_pat
+  Control_MC_80_to_40     : Control_MC_80_to_40_pat
+  Control_MC_80_to_stop   : Control_MC_80_to_stop_pat
+  Control_MC_80_to_100    : Control_MC_80_to_100_pat
+  Control_MC_100_to_80    : Control_MC_100_to_80_pat
+  Control_MC_100_to_40    : Control_MC_100_to_40_pat
+  Control_MC_100_to_stop  : Control_MC_100_to_stop_pat
+  Control_MC_100_to_120   : Control_MC_100_to_120_pat
+  Control_MC_120_to_100   : Control_MC_120_to_100_pat
+  Control_MC_120_to_80    : Control_MC_120_to_80_pat
+  Control_MC_120_to_40    : Control_MC_120_to_40_pat
+  Control_MC_120_to_stop  : Control_MC_120_to_stop_pat
+
+{  Control_C2_1_to_1_3     : Control_C2_1_to_1_3_pat
+  Control_C2_1_3_to_1     : Control_C2_1_3_to_1_pat
+  Control_C5_1_to_1_3     : Control_C5_1_to_1_3_pat
+  Control_C5_1_3_to_1     : Control_C5_1_3_to_1_pat}
+$End

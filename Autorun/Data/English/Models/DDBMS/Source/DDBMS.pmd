@@ -1,0 +1,29 @@
+$Results
+InqSerAvTimeS1_P1: trace watch_value Transaction_Time_Statistics	 								Transaction_Time_Statistics.Soc = 1 and
+					Transaction_Time_Statistics.Pr = 1
+					Time_now - Transaction_Time_Statistics.Cr_time
+InqSerAvTimeS2_P1: trace watch_value Transaction_Time_Statistics	 								Transaction_Time_Statistics.Soc = 2 and
+					Transaction_Time_Statistics.Pr = 1 
+					Time_now - Transaction_Time_Statistics.Cr_time
+InqSerAvTimeS3_P1: trace watch_value Transaction_Time_Statistics	 								Transaction_Time_Statistics.Soc = 3 and
+					Transaction_Time_Statistics.Pr = 1 
+					Time_now - Transaction_Time_Statistics.Cr_time
+InqSerAvTimeS4_P1: trace watch_value Transaction_Time_Statistics	 								Transaction_Time_Statistics.Soc = 4 and
+					Transaction_Time_Statistics.Pr = 1 
+					Time_now - Transaction_Time_Statistics.Cr_time
+InqSerAvTimeS5_P1: trace watch_value Transaction_Time_Statistics	 								Transaction_Time_Statistics.Soc = 5 and
+					Transaction_Time_Statistics.Pr = 1 
+					Time_now - Transaction_Time_Statistics.Cr_time
+InqSerAvTimeS6_P1: trace watch_value Transaction_Time_Statistics	 								Transaction_Time_Statistics.Soc = 6 and
+					Transaction_Time_Statistics.Pr = 1 
+					Time_now - Transaction_Time_Statistics.Cr_time
+InqSerAvTimeS_P1: trace watch_value Transaction_Time_Statistics	 			
+					Transaction_Time_Statistics.Pr = 1 
+					Time_now - Transaction_Time_Statistics.Cr_time
+InqSerAvTimeS_P2: trace watch_value Transaction_Time_Statistics	 			
+					Transaction_Time_Statistics.Pr = 2 
+					Time_now - Transaction_Time_Statistics.Cr_time
+InqSerAvTimeS_P3: trace watch_value Transaction_Time_Statistics	 			
+					Transaction_Time_Statistics.Pr = 3
+					Time_now - Transaction_Time_Statistics.Cr_time
+$End

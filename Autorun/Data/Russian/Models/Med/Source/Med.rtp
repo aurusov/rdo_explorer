@@ -1,0 +1,79 @@
+$Resource_type Состояние : permanent 
+$Parameters 
+  Ритм          : integer 
+  Давление      : integer 
+  Температура   : integer 
+  Сопротивление : integer 
+$End 
+ 
+$Resource_type Занятости : permanent 
+$Parameters 
+  Датчика_сердца      : integer 
+  Датчика_давления    : integer 
+  Датчика_температуры : integer 
+  Датчика_кожи        : integer 
+$End 
+ 
+$Resource_type Датчики : permanent 
+$Parameters 
+  Значение  : integer 
+  Отработка : integer[0..1] 
+$End 
+ 
+$Resource_type Диапазоны : permanent 
+$Parameters 
+  Макс       : integer 
+  Мин        : integer 
+$End 
+ 
+$Resource_type Медсестры : permanent 
+$Parameters 
+  Номер_шага   : integer[0..255]
+  Шаг          : (Делается, Сделан)
+  Координата_X : integer
+  Координата_Y : integer
+$End 
+ 
+$Resource_type Компьютеры : permanent 
+$Parameters 
+  Занятость  : integer 
+$End 
+ 
+$Resource_type Врачи : permanent 
+$Parameters 
+  Желание      : (Есть , Нет , Есть_1 , Нет_1)
+  Номер_шага   : integer [0..255]
+  Шаг          : (Делается, Сделан)
+  Координата_X : integer = 0
+  Координата_Y : integer = 55
+$End 
+ 
+$Resource_type Лекарства : permanent 
+$Parameters 
+  Данные  : integer[0..1] 
+$End 
+ 
+$Resource_type Лечащие_врачи: permanent 
+$Parameters 
+  Данные  : integer[0..1] 
+$End 
+ 
+$Resource_type Импульсы_опроса : permanent 
+$Parameters 
+  Импульс  : (Есть , Нет , Есть_1 , Нет_1) 
+  А11      : integer[0..1] 
+  А12      : integer[0..1] 
+  А13      : integer[0..1] 
+  А14      : integer[0..1] 
+  А21      : integer[0..1] 
+  А22      : integer[0..1] 
+  А23      : integer[0..1] 
+  А24      : integer[0..1] 
+  А3       : integer[0..1] 
+$End 
+ 
+$Resource_type Отображения : permanent 
+$Parameters 
+  Сирена  : (Мигает, Не_мигает, Мигает_1, Не_мигает_1)
+$End
+

@@ -1,0 +1,43 @@
+$Resource_type Solid:permanent
+$Parameters
+  Name   :   (A,B,C,D1,D2,E,F,G,floor)
+  SizeOx :   integer=5
+  SizeOy :   integer=3
+  SizeOz :   integer
+  Xa     :   integer
+  Ya     :   integer
+  Za     :   integer
+  Mobil  :   (Mov,UnMov)=Mov
+$End
+
+$Resource_type Robot: permanent
+$Parameters
+  Status: (Free,Busy)=Free
+  Ox:   integer
+  Oy:   integer
+  Oz:   integer
+$End
+
+$Resource_type Na: temporary
+$Parameters
+  Solid1: such_as Solid.Name
+  Solid2: such_as Solid.Name
+  Solid3: such_as Solid.Name
+  Solid4: such_as Solid.Name
+$End
+
+$Resource_type Action: permanent
+$Parameters
+  Do:    (take,put,kill,raport)
+  SolidN: such_as Solid.Name
+$End
+
+$Resource_type Goal: permanent
+$Parameters
+  Solid1: such_as Solid.Name
+  Solid2: such_as Solid.Name
+  Ox:    such_as  Solid.Xa
+  Oy:    such_as  Solid.Ya
+  Oz:    such_as Solid.Za
+$End
+

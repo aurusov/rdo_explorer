@@ -1,0 +1,114 @@
+{1}
+$Resource_type Товар_tt : temporary
+$Parameters
+  Сумма : integer
+  Наименование : (брюки, рубашка, майка)
+  Номер : integer
+  Товар_f_A1 : integer[0..1]
+  Товар_f_A44 : integer[0..1]
+$End
+
+{2}
+$Resource_type Кредитная__карточка_tt : temporary
+$Parameters
+  Сумма : integer
+  Номер : integer
+  Номер_очереди : (перед_первой, перед_второй, первая, вторая)
+  Кредитная__карточка_f_A2 : integer[0..1]
+  Кредитная__карточка_f_A43 : integer[0..1]
+  Кредитная__карточка_f_A42 : integer[0..1]
+$End
+
+{3}
+$Resource_type Кредитная__карточка1_tt : temporary
+$Parameters
+  Сумма : integer
+  Номер : integer
+$End
+
+{4}
+$Resource_type Заказ_tt : temporary
+$Parameters
+  Сумма : integer
+  Номер : integer
+$End
+
+{5}
+$Resource_type Чек_tt : temporary
+$Parameters
+  Сумма : integer
+  Номер : integer
+$End
+
+{6}
+$Resource_type Кассовый__аппарат_pt : permanent
+$Parameters
+  Занятость : (Занят, Свободен) = Свободен
+  Номер_очереди : such_as Кредитная__карточка_tt.Номер_очереди
+$End
+
+{7}
+$Resource_type Автомат_для_карточки_pt : permanent
+$Parameters
+  Занятость : (Занят, Свободен) = Свободен
+  Номер_очереди : such_as Кредитная__карточка_tt.Номер_очереди
+$End
+
+{8}
+$Resource_type Разрешение_оплаты_tt : temporary
+$Parameters
+  Разрешение_оплаты_m : integer
+  Номер : integer
+  Разрешение_оплаты_f_A41 : integer[0..1]
+  Разрешение_оплаты_f_A42 : integer[0..1]
+  Разрешение_оплаты_f_A44 : integer[0..1]
+  Разрешение_оплаты_f_A43 : integer[0..1]
+$End
+
+{9}
+$Resource_type Цена_tt : temporary
+$Parameters
+  Сумма : integer
+  Номер : integer
+  Цена_f_A3 : integer[0..1]
+  Цена_f_A41 : integer[0..1]
+  Цена_f_A42 : integer[0..1]
+  Цена_f_A43 : integer[0..1]
+$End
+
+{10}
+$Resource_type PC_pt : permanent
+$Parameters
+  Занятость : (Занят, Свободен) = Свободен
+$End
+
+{11}
+$Resource_type Сеть_pt : permanent
+$Parameters
+  Занятость : integer
+$End
+
+{12}
+$Resource_type Счет_tt : temporary
+$Parameters
+  Сумма : integer
+  Номер : integer
+  Счет_f_A3 : integer[0..1]
+$End
+
+{13}
+$Resource_type Новые_данные_о_клиенте_tt : temporary
+$Parameters
+  Сумма : integer
+  Номер : integer
+$End
+
+{14}
+$Resource_type Номер_pt : permanent
+$Parameters
+  Номер     : integer = 0
+  Вышло     : integer = 0
+  В_системе : integer = 0
+  Длина_очереди_1 : integer = 0
+  Длина_очереди_2 : integer = 0
+$End

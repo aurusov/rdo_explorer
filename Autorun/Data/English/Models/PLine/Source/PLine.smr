@@ -1,0 +1,15 @@
+Model_name = PLine
+
+Resource_file  = PLine
+OprIev_file    = PLine
+Frame_file     = PLine
+Statistic_file = PLine
+Results_file   = PLine
+
+Show_mode      = Animation {NoShow}
+Frame_number   = 1
+Show_rate      = 1.0
+
+Terminate_if Time_now > 0.1
+Machine_A_problems.Seed = 11111111
+Machine_B_problems.Seed = 22222222

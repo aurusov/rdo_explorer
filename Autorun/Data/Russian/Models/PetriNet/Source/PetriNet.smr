@@ -1,0 +1,24 @@
+Model_name = PetriNet
+
+Resource_file  = PetriNet
+OprIev_file    = PetriNet
+Frame_file     = PetriNet
+Statistic_file = PetriNet
+Results_file   = PetriNet
+Trace_file     = PetriNet
+{Run_StartTime  = 2.0}        {время начала прогона}
+{Trace_StartTime= 0.5}        {время начала трасировки}
+{Trace_EndTime  = 1.0}        {время конца трасировки}
+Show_mode       = Animation {выбор начального режима отображения}
+Frame_number   = 1          {номер кадра для начального режима}
+Show_rate      = 10000.0     {временной масштаб отображения}
+
+Terminate_if  Место_4.Pic >= 10 {Условие окончания прогона}
+{Break_point  Точка_1  Место_1.Емкость = 3 and Time_now >200.0}
+{Break_point  Точка_2 Место_4.Емкость = 4}
+
+{Базы генераторов последовательностей:}
+Случайный_датчик_1.Seed  = 31111
+Случайный_датчик_2.Seed  = 131111
+Случайный_датчик_3.Seed  = 1131111
+Случайный_датчик_4.Seed  = 11131113

@@ -1,0 +1,54 @@
+$Resources
+  System   : System_type   trace   0   40   0.6   0.3   Initialisation   0   *  *  *  *  *  *  *  *
+
+  Individual_to_show_1  : An_individual_to_show  trace  1    *   *   *   *
+  Individual_to_show_2  : An_individual_to_show  trace  2    *   *   *   *
+  Individual_to_show_3  : An_individual_to_show  trace  3    *   *   *   *
+  Individual_to_show_4  : An_individual_to_show  trace  4    *   *   *   *
+  Individual_to_show_5  : An_individual_to_show  trace  5    *   *   *   *
+  Individual_to_show_6  : An_individual_to_show  trace  6    *   *   *   *
+  Individual_to_show_7  : An_individual_to_show  trace  7    *   *   *   *
+  Individual_to_show_8  : An_individual_to_show  trace  8    *   *   *   *
+  Individual_to_show_9  : An_individual_to_show  trace  9    *   *   *   *
+  Individual_to_show_10 : An_individual_to_show  trace  10   *   *   *   *
+  Individual_to_show_11 : An_individual_to_show  trace  11   *   *   *   *
+  Individual_to_show_12 : An_individual_to_show  trace  12   *   *   *   *
+  Individual_to_show_13 : An_individual_to_show  trace  13   *   *   *   *
+  Individual_to_show_14 : An_individual_to_show  trace  14   *   *   *   *
+  Individual_to_show_15 : An_individual_to_show  trace  15   *   *   *   *
+  Individual_to_show_16 : An_individual_to_show  trace  16   *   *   *   *
+  Individual_to_show_17 : An_individual_to_show  trace  17   *   *   *   *
+  Individual_to_show_18 : An_individual_to_show  trace  18   *   *   *   *
+  Individual_to_show_19 : An_individual_to_show  trace  19   *   *   *   *
+  Individual_to_show_20 : An_individual_to_show  trace  20   *   *   *   *
+  Individual_to_show_21 : An_individual_to_show  trace  21   *   *   *   *
+  Individual_to_show_22 : An_individual_to_show  trace  22   *   *   *   *
+  Individual_to_show_23 : An_individual_to_show  trace  23   *   *   *   *
+  Individual_to_show_24 : An_individual_to_show  trace  24   *   *   *   *
+  Individual_to_show_25 : An_individual_to_show  trace  25   *   *   *   *
+  Individual_to_show_26 : An_individual_to_show  trace  26   *   *   *   *
+  Individual_to_show_27 : An_individual_to_show  trace  27   *   *   *   *
+  Individual_to_show_28 : An_individual_to_show  trace  28   *   *   *   *
+  Individual_to_show_29 : An_individual_to_show  trace  29   *   *   *   *
+  Individual_to_show_30 : An_individual_to_show  trace  30   *   *   *   *
+  Individual_to_show_31 : An_individual_to_show  trace  31   *   *   *   *
+  Individual_to_show_32 : An_individual_to_show  trace  32   *   *   *   *
+  Individual_to_show_33 : An_individual_to_show  trace  33   *   *   *   *
+  Individual_to_show_34 : An_individual_to_show  trace  34   *   *   *   *
+  Individual_to_show_35 : An_individual_to_show  trace  35   *   *   *   *
+  Individual_to_show_36 : An_individual_to_show  trace  36   *   *   *   *
+  Individual_to_show_37 : An_individual_to_show  trace  37   *   *   *   *
+  Individual_to_show_38 : An_individual_to_show  trace  38   *   *   *   *
+  Individual_to_show_39 : An_individual_to_show  trace  39   *   *   *   *
+  Individual_to_show_40 : An_individual_to_show  trace  40   *   *   *   *
+{  Individual_to_show_41 : An_individual_to_show  trace  41   *   *   *   *
+  Individual_to_show_42 : An_individual_to_show  trace  42   *   *   *   *
+  Individual_to_show_43 : An_individual_to_show  trace  43   *   *   *   *
+  Individual_to_show_44 : An_individual_to_show  trace  44   *   *   *   *
+  Individual_to_show_45 : An_individual_to_show  trace  45   *   *   *   *
+  Individual_to_show_46 : An_individual_to_show  trace  46   *   *   *   *
+  Individual_to_show_47 : An_individual_to_show  trace  47   *   *   *   *
+  Individual_to_show_48 : An_individual_to_show  trace  48   *   *   *   *
+  Individual_to_show_49 : An_individual_to_show  trace  49   *   *   *   *
+  Individual_to_show_50 : An_individual_to_show  trace  50   *   *   *   *}
+$End

@@ -1,0 +1,13 @@
+$Resource_type Места : permanent
+$Parameters
+  Емкость      :  integer [0..25]
+  Номер        :  integer [0..7]
+  Тень         :  integer 
+  Pic          :  integer 
+$End
+
+$Resource_type Переходы : permanent
+$Parameters
+  Занятость    :  (Занят, Свободен)
+  Номер        :  integer [0..3]
+$End

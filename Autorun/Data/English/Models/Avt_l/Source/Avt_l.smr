@@ -1,0 +1,16 @@
+Model_name = Avt_l
+
+Resource_file  = Avt_l
+OprIev_file    = Avt_l
+Frame_file     = Avt_l
+Statistic_file = Avt_l
+Results_file   = Avt_l
+Trace_file     = Avt_l
+
+Show_mode       = Animation
+Frame_number   = 1          
+
+Terminate_if    Automaton.Counter >= 1000
+
+
+{Базы генераторов последовательностей:}

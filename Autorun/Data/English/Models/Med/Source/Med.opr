@@ -1,0 +1,22 @@
+$Operations 
+  Operation_1            : Patient_s_state_is_changing
+  Operation_2            : Heart_rythm_definition 
+  Operation_3            : Pressure_definition 
+  Operation_4            : Temperature_definition 
+  Operation_5            : Skin_resistance_definition 
+  Operation_6            : Heart_rythm_comparison 
+  Operation_7            : Pressure_comparison 
+  Operation_8            : Temperature_comparison 
+  Operation_9            : Skin_resistance_comparison 
+  Operation_10           : Rendering_assistance
+  Operation_11           : Alarm_is_blinking Blinking_1 Blinking Not_Blinking_1
+  Operation_12           : Alarm_is_blinking Not_Blinking_1 Not_Blinking Blinking_1
+  Operation_13           : Data_inputing_in_DB_by_doctor
+  Operation_14           : Running_automatically_a_history_of_illness
+  Operation_15           : Doctor_wants
+  Operation_16           : Doctor_moves
+  Operation_17           : Doctor_dont_want
+  Operation_18           : Initializing_pulse_has_place 
+  Operation_19           : Initializing_pulse_has_no_place 
+$End
+

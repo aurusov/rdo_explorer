@@ -1,0 +1,152 @@
+$Resource_type  A_sign : temporary
+$Parameters
+  The_name_of_a_sign       : (Is_absent, A_slippery_road, A_rough_road, A_brupt_descent, Tunnel,
+                              A_brupt_rise, Crossing_with_tram_line,
+                              The_movement_without_stop_is_forbidden, The_entrance_is_forbidden,
+                              The_movement_is_forbidden, Stop, Railway_line_with_a_bar,
+                              Railway_line_without_a_bar, Crossing_equivalent_ways,
+                              Light_signal_regulation, Dangerous_turns,
+                              Crossing_with_a_circular_movement,
+                              Road_work, Animal, Narrowing_a_road, The_children,
+                              A_lateral_wind, Fall_of_stones, Other_dangers, Pedestrian_crossing,
+                              Danger, Overtaking_is_forbidden, The_end_of_zone_overtaking_is_forbidden,
+                              The_end_of_zone_restriction_of_the_max_speed,
+                              Road_with_a_One_way_movement, End_of_Road_with_a_One_way_movement,
+                              A_beginning_of_a_strip, The_end_of_a_strip,
+                              The_index_of_directions, The_scheme_of_a_movement,
+                              A_place_of_rest, Camping, Station_of_a_feed, A_police_post, The_telephone,
+                              A_movement_of_mechanical_transport_facilities_is_forbidden,
+                              Restriction_of_the_max_speed, The_end_of_zone_of_all_restrictions,
+                              A_movement_of_cars, Restriction_of_the_min_speed,
+                              The_end_of_zone_restriction_of_the_min_speed,
+                              A_highway, The_end_of_a_highway, Dangerous_turn,
+                              Road_for_automobiles, The_end_of_a_road_for_automobiles,
+                              Recommended_speed,
+                              A_beginning_of_settlement_populated_area_60,
+                              A_beginning_of_settlement_populated_area_90,
+                              The_end_of_settlement_populated_area_60,
+                              The_end_of_settlement_populated_area_90,
+                              Distance_up_to_an_object_7_1_1,
+                              Distance_up_to_an_object_7_1_2)
+  Coordinate               : real [0.0..100.0] = 100.0
+  A_zone_of_visibility     : real [0.0..5.0] = 0.1
+  A_zone_of_action         : real [0.0..100.0] = 3.0
+  The_high_speed_information  : real = 90.0
+  A_sign_an_attribute      : (Restriction_min, Restriction_max, The_information, Recommended,
+                              The_interdiction_change_the_band, The_interdiction_overtaking) = The_information
+  Buffer                   : real = 0.0
+$End
+
+$Resource_type  A_section : temporary
+$Parameters
+  Coordinate          : real [0.0..100.0] = 0.8
+  Value_of_vibration  : real = 20.0
+  Value_of_sliding    : real = 30.0
+  Value_of_slope      : real = 10.0
+  Extent              : real = 1.0
+  Buffer              : real = 0.0
+$End
+
+$Resource_type  Turn : temporary
+$Parameters
+  Coordinate            : real [0.0..100.0] = 0.8
+  A_zone_of_visibility  : real [0.0..5.0] = 0.1
+  Radius                : real = 1.0
+  Extent                : real = 2.0
+  A_direction           : (Left, Right, Is_absent) = Is_absent
+  Buffer                : real = 0.0
+$End
+
+$Resource_type  Memory : temporary
+$Parameters
+  Distance              : real = 0.0
+  A_direction           : such_as Turn.A_direction = Is_absent
+  Buffer                : real = 0.0
+$End
+
+$Resource_type  Crossing : temporary
+$Parameters
+  Coordinate            : real [0.0..100.0]= 0.0
+  A_zone_of_visibility  : real [0.0..5.0] = 0.0
+  Radius                : real = 1.0
+  Extent                : real = 2.0
+  A_direction           : such_as Memory.A_direction = Is_absent
+  Buffer                : real = 0.0
+$End
+
+$Resource_type  Road : temporary
+$Parameters
+  Coordinate              : real [0.0..100.0] = 0.08
+  Visibility_prior_to_the_beginning   : real
+  Sectoring               : (One_way, Counter, No)
+  Movement                : (One_way, Counter)
+  Width                   : real
+  Width_roadside          : real
+  Of_passing_strips       : integer [1..2]
+  From_the_right          : real
+  A_strip_from_the_right  : (Is_not_known, First, Second)
+  Buffer                  : real = 0.0
+$End
+
+$Resource_type  Object : temporary
+$Parameters
+  A_place_of_detection  : real [0.0..100.0]
+  Speed                 : real
+  Distance              : real
+  Interval              : real
+  Buffer                : real = 0.0
+$End
+
+$Resource_type  The_automobile_ACS : permanent
+$Parameters
+  A_condition               : (Actively, Passively, Passively1,
+                               Passively2, Passively3, Passively4,
+                               Passively5, Passively6, Passively7,
+                               Passively8, Passively9, Passively10,
+                               Passively11, Passively12, Passively13,
+                               Passively14) = Passively
+  Movement                  : (A_const_speed, Is_accelerated, Is_braked,
+                               Is_urgently_braked) = Is_accelerated
+  Vision_of_a_sign          : (I_see, I_do_not_see, Passed_by) = I_do_not_see
+  A_kind_of_a_sign          : such_as A_sign.The_name_of_a_sign = Is_absent
+  A_zone_of_action          : real = 0.0
+  The_information_on_speed  : real = 0.0
+  Vibration                 : real = 0.0
+  Sliding                   : real = 0.0
+  Slope                     : real = 0.0
+  An_attribute              : such_as A_sign.A_sign_an_attribute = The_information
+  A_section_type            : (Normal, Special, Normal1) = Normal
+  Turn_radius               : real [0.0..1100.0] = 0.0
+  Vision_of_turn            : (I_see, I_do_not_see, Passed_by, I_do_not_see1) = I_do_not_see
+  A_highway                 : (A_beginning, The_end) = The_end
+  Turn_direction            : such_as Turn.A_direction = Is_absent
+  A_rudder                  : (Is_switched_on, Woking, Woking1, Is_switched_off) = Is_switched_off
+  Vision_of_crossing        : (I_see, I_do_not_see, Woking) = I_do_not_see
+  A_direction_required      : such_as Memory.A_direction = Is_absent
+  A_direction_of_crossing   : such_as Crossing.A_direction = Is_absent
+  In_memory                 : (Yes, No) = No
+  A_counter_movement        : (Yes, No) = No
+  Passing_strips            : integer = 1
+  A_strip_from_the_right    : such_as Road.A_strip_from_the_right = Is_not_known
+  Departure                 : (Is_possible, Is_impossible) = Is_possible
+  Object_speed              : real = 0.0
+  Object_distance           : real = 0.0
+  Object_Interval           : real = 0.0
+$End
+
+$Resource_type  The_automobile_MECHANICAL : permanent
+$Parameters
+  Passed_way                   : real = 0.0
+  Passed_after_a_sign          : real = 0.0
+  From_a_beginning_of_section  : real = 0.0
+  From_a_beginning_of_turn     : real = 0.0
+  Distance_before_sign         : real = 0.0
+  Distance_before_turn         : real = 0.0
+  Distance_before_crossing     : real = 0.0
+  Memory_before_crossing       : real = 0.0
+  Speed                        : real = 0.0
+  Acceleration                 : real = 5.927
+  Angle_of_wheels              : real = 0.0
+  Consumption                  : real = 0.0
+$End
+

@@ -1,0 +1,12 @@
+$Operations
+	O1:Take 3.0
+	O2:Out 2.0
+	O3:Put 1.0
+	O9:Copy 2.0
+	O4:Thru 0.1
+	O10:Move 0.2
+	O5:Born1 1.0
+	O6:Born2 11.0
+	O7:Born3 20.0
+	O8:Born4 15.0
+$End

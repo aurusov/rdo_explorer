@@ -1,0 +1,50 @@
+$Resources
+  The_automobile_ACS1 : The_automobile_ACS trace * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  The_automobile_MECHANICAL1 : The_automobile_MECHANICAL trace  * * * * * * * * * * * *
+
+  A_sign0 :   A_sign  Road_for_automobiles 0.3 0.1 2.0 90.0 The_information *
+  A_sign1 :   A_sign  A_highway 0.6 0.1 3.0 110.0 Restriction_max  *
+  A_sign2 :   A_sign  Restriction_of_the_max_speed  1.2 0.2 0.4 50.0 Restriction_max *
+  A_sign3 :   A_sign  Restriction_of_the_min_speed  1.6 0.1 0.3 80.0 Restriction_min *
+  A_sign4 :   A_sign  Recommended_speed 2.0 0.3 0.6 60.0 Recommended *
+  A_sign5 :   A_sign  Recommended_speed 2.8 0.1 0.1 70.0 Recommended *
+  A_sign6 :   A_sign  Restriction_of_the_max_speed 3.4 0.3 0.4 60.0 Restriction_max *
+  A_sign8 :   A_sign  Recommended_speed 4.0 0.2 0.1 50.0 Recommended *
+  A_sign9 :   A_sign  A_slippery_road 4.4 0.3 3.0 50.0 Recommended *
+  A_sign10 :  A_sign  The_end_of_a_highway 5.0 0.2 0.1 90.0 Restriction_max *
+  A_sign11 :  A_sign  Restriction_of_the_min_speed 5.2 0.1 0.9 60.0 Restriction_min *
+  A_sign12 :  A_sign  A_brupt_descent 5.8 0.2 0.5 50.0 Recommended *
+  A_sign13 :  A_sign  Dangerous_turn 6.1 0.1 1.0 50.0 Recommended *
+  A_sign14 :  A_sign  A_beginning_of_settlement_populated_area_60 6.5 0.3 1.0 60.0 Restriction_max *
+  A_sign15 :  A_sign  The_end_of_settlement_populated_area_60 6.8 0.3 1.0 90.0 Restriction_max *
+  A_sign16 :  A_sign  Stop  7.3 0.2 0.1 0.0 Restriction_max *
+  A_sign17 :  A_sign  A_rough_road 7.6 0.3 0.4 50.0 Recommended *
+  A_sign18 :  A_sign  The_entrance_is_forbidden 8.0 0.2 0.5 0.0 Restriction_max *
+
+  A_section1 : A_section  1.2 2.0 3.0 0.0 0.1  *
+  A_section2 : A_section  1.7 10.0 5.0 2.0 0.2 *
+  A_section3 : A_section  2.8 0.0 5.0 0.0 0.1  *
+  A_section4 : A_section  4.5 5.0 6.0 2.0 0.1  *
+  A_section5 : A_section  5.9 5.0 0.0 10.0 0.2 *
+  A_section6 : A_section  7.5 3.0 0.0 5.0 0.1  *
+  Turn1 : Turn  1.3 0.2 300.0 0.1 Left  *
+  Turn2 : Turn  1.8 0.2 400.0 0.3 Right *
+  Turn3 : Turn  2.4 0.4 800.0 0.4 Left  *
+  Turn4 : Turn  5.4 0.2 200.0 0.5 Left  *
+  Turn5 : Turn  6.3 0.1 400.0 0.2 Right *
+  Turn6 : Turn  7.3 0.3 100.0 0.2 Right *
+  Crossroads1 : Crossing 1.9 0.5 200.0 0.3 Right *
+  Crossroads2 : Crossing 5.8 0.4  70.0 0.1 Left *
+  Crossroads3 : Crossing 6.2 0.3 100.0 0.2 Right *
+  A_required_crossroads1 : Memory 5.8 Left *
+  A_required_crossroads2 : Memory 6.2 Right *
+  Road1 : Road 0.0 0.0 No Counter 7.0 1.2 1 2.0 Is_not_known *
+  Road2 : Road 2.4 0.8 Counter Counter 0.0 1.9 2 0.0 First *
+  Road3 : Road 6.0 0.7 One_way One_way 0.0 1.8 2 0.0 Second *
+  Object1 : Object 1.7 40.0 100.0 3.0 *
+  Object2 : Object 3.5 30.0  -60.0 2.4 *
+  Object3 : Object 4.1 100.0 -300.0 -1.4 *
+  Object4 : Object 6.4 90.0  70.0 -2.8 *
+  Object5 : Object 7.3 80.0  200.0 1.3 *
+$End
+

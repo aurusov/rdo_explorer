@@ -1,0 +1,58 @@
+$Resources
+  Store_house_8   : Sheets_store  288
+  Store_house_9   : Sheets_store   72
+  The_crane       : a_Crane       Free  _Sheets_store9
+  The_man1        : a_Man         Free  Man_1
+  The_man2        : a_Man         Free  Man_2
+  The_man3        : a_Man         Free  Man_3
+  The_man4        : a_Man         Free  Man_4
+  The_man5        : a_Man         Free  Man_5
+  Half_fin_prod_area           : Half_finished_product_area  Free  Unloaded  0
+  The_band_forwarding_device29 : Band_forwarding_device  Free  0  Band_forwarding_device_29
+  The_band_forwarding_device30 : Band_forwarding_device  Free  0  Band_forwarding_device_30
+  The_band_forwarding_device31 : Band_forwarding_device  Free  0  Band_forwarding_device_31
+  The_band_forwarding_device32 : Band_forwarding_device  Free  0  Band_forwarding_device_32
+  Shelving10       : a_Shelving     0  Shelving_10
+  Shelving11       : a_Shelving     0  Shelving_11
+  Shelving12       : a_Shelving     0  Shelving_12
+  Shelving13       : a_Shelving     0  Shelving_13
+  Press1           : a_Press_punch  Free Worked_Unloaded Press_1
+  Press1111        : a_Press_punch  Free Worked_Unloaded Press_1111
+  Press2           : a_Press_punch  Free Worked_Unloaded Press_2
+  Press2222        : a_Press_punch  Free Worked_Unloaded Press_2222
+  Smooth14         : a_Smooth_out_device          Free  0  Smoothing_out_14
+  Smooth1414       : a_Smooth_out_device          Free  0  Smoothing_out_1414
+  Smooth16         : a_Smooth_out_device          Free  0  Smoothing_out_16
+  Smooth1616       : a_Smooth_out_device          Free  0  Smoothing_out_1616
+  Caset15          : Device_of_packing_in_casette  Free  0  Casette_15
+  Caset151         : Device_of_packing_in_casette  Free  0  Casette_151
+  Caset17          : Device_of_packing_in_casette  Free  0  Casette_17
+  Caset171         : Device_of_packing_in_casette  Free  0  Casette_171
+  Tr_robot125      : a_Transport_robot  Free  Case17  Stand     Robot_125
+  Tr_robot225      : a_Transport_robot  Free  Case171 Stand     Robot_225
+  Tr_robot126      : a_Transport_robot  Free  Reception_device2526  Stand     Robot_126
+  Tr_robot226      : a_Transport_robot  Free  Man1  Stand     Robot_226
+  Tr_robot127      : a_Transport_robot  Free  Case15  Stand     Robot_127
+  Tr_robot227      : a_Transport_robot  Free  Case151 Stand     Robot_227
+  Tr_robot128      : a_Transport_robot  Free  Reception_device2827  Stand     Robot_128
+  Tr_robot228      : a_Transport_robot  Free  Reception_device2728  Stand     Robot_228
+  Smooth_out_machine  : a_Smooth_out_machine  Free  0
+  The_washing         : a_Washing_machine  Free  Unloaded  Washing_00
+  The_washing19       : a_Washing_machine  Free  Unloaded  Washing_19
+  The_assembling122   : an_Assembling_place Free  Unloaded  0  Assembling_122
+  The_assembling222   : an_Assembling_place Free  Unloaded  0  Assembling_222
+  The_assembling322   : an_Assembling_place Free  Unloaded  0  Assembling_322
+  The_assembling422   : an_Assembling_place Free  Unloaded  0  Assembling_422
+  Conveyer7           : a_Roller_conveyer      Free  0  Roller_conveyer
+  Input_tb_6          : an_Input_table         0
+  Scissors5           : a_Scissors             Free  Worked_Unloaded
+  Block3              : a_Store_block          0  Free  Block_3
+  Block3333           : a_Store_block          0  Free  Block_3333
+  Block23             : a_Store_block          0  Free  Block_23
+  Block2323           : a_Store_block          0  Free  Block_2323
+  Reception2526       : a_Input_output_device  Free  Reception_2526
+  Reception2728       : a_Input_output_device  Free  Reception_2728
+  Reception2827       : a_Input_output_device  Free  Reception_2827
+  Block30             : a_Store_block          0  Free  Block_30
+$End
+

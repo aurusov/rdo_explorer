@@ -1,0 +1,21 @@
+$Results
+ Pokaz1:   trace  watch_par  Detal1.Xa
+ Pokaz2:   trace  watch_par  Detal1.Ya
+ Pokaz3:   trace  watch_par  Detal2.Xa
+ Pokaz4:   trace  watch_par  Detal2.Ya
+ Pokaz5:   trace  watch_par  Detal3.Xa
+ Pokaz6:   trace  watch_par  Detal3.Ya
+ {Pokaz7:   trace  watch_par  Detal4.X
+ Pokaz8:   trace  watch_par  Detal4.Y
+ Pokaz9:   trace  watch_par  Detal5.X
+ Pokaz10:  trace  watch_par  Detal5.Y}
+ Pokaz11:  trace  watch_par  Detal6.Xa
+ Pokaz12:  trace  watch_par  Detal6.Ya
+ Pokaz13:  trace  watch_par  Detal7.Xa
+ Pokaz14:  trace  watch_par  Detal7.Ya 
+ {Pokaz15:  trace  watch_par  Shvat.Ox
+ Pokaz16:  trace  watch_par  Shvat.Oy}
+ {Pokaz17:  trace  watch_state  Shvat.Sost = Zanjat
+ Pokaz18:  trace  watch_quant  Na  NoCheck}
+$End
+   

@@ -1,0 +1,43 @@
+$Results
+  The_man1_Busy  : watch_state The_man1.Busyness = Busy
+  The_man2_Busy  : watch_state The_man2.Busyness = Busy
+  The_man3_Busy  : watch_state The_man3.Busyness = Busy
+  The_man4_Busy  : watch_state The_man4.Busyness = Busy
+  The_man5_Busy  : watch_state The_man5.Busyness = Busy
+
+  Shelving10_Number  : watch_par Shelving10.Number_of_the_bands
+  Shelving11_Number  : watch_par Shelving11.Number_of_the_bands
+  Shelving12_Number  : watch_par Shelving12.Number_of_the_bands
+  Shelving13_Number  : watch_par Shelving13.Number_of_the_bands
+
+  Tr_robot125_Busy  : watch_state Tr_robot125.Busyness = Busy
+  Tr_robot225_Busy  : watch_state Tr_robot225.Busyness = Busy
+  Tr_robot126_Busy  : watch_state Tr_robot126.Busyness = Busy
+  Tr_robot226_Busy  : watch_state Tr_robot226.Busyness = Busy
+  Tr_robot127_Busy  : watch_state Tr_robot127.Busyness = Busy
+  Tr_robot227_Busy  : watch_state Tr_robot227.Busyness = Busy
+  Tr_robot128_Busy  : watch_state Tr_robot128.Busyness = Busy
+  Tr_robot228_Busy  : watch_state Tr_robot228.Busyness = Busy
+  Tr_robot125_Go    : watch_state Tr_robot125.Condition = Go
+  Tr_robot225_Go    : watch_state Tr_robot225.Condition = Go
+  Tr_robot126_Go    : watch_state Tr_robot126.Condition = Go
+  Tr_robot226_Go    : watch_state Tr_robot226.Condition = Go
+  Tr_robot127_Go    : watch_state Tr_robot127.Condition = Go
+  Tr_robot227_Go    : watch_state Tr_robot227.Condition = Go
+  Tr_robot128_Go    : watch_state Tr_robot128.Condition = Go
+  Tr_robot228_Go    : watch_state Tr_robot228.Condition = Go
+
+  Smooth_out_machine_Busy  : watch_state Smooth_out_machine.Busyness = Busy
+  The_washing_Busy         : watch_state The_washing.Busyness = Busy
+  The_washing19_Busy       : watch_state The_washing19.Busyness = Busy
+
+  The_assembling122_Busy   : watch_state The_assembling122.Busyness = Busy
+  The_assembling222_Busy   : watch_state The_assembling222.Busyness = Busy
+  The_assembling322_Busy   : watch_state The_assembling322.Busyness = Busy
+  The_assembling422_Busy   : watch_state The_assembling422.Busyness = Busy
+  The_assembling122_Rest   : watch_par The_assembling122.The_rest_of_parts
+  The_assembling222_Rest   : watch_par The_assembling222.The_rest_of_parts
+  The_assembling322_Rest   : watch_par The_assembling322.The_rest_of_parts
+  The_assembling422_Rest   : watch_par The_assembling422.The_rest_of_parts
+$End
+

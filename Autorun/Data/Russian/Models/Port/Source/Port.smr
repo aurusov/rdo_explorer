@@ -1,0 +1,13 @@
+Model_name = Port
+
+Resource_file  = Port
+OprIev_file    = Port
+Statistic_file = Port
+Results_file   = Port
+{Trace_file     = Port}
+Frame_file     = Port
+Show_mode      = Animation
+Frame_number   = 1
+Show_rate      = 1000000.0
+
+Terminate_if  Time_now >= 8640.0

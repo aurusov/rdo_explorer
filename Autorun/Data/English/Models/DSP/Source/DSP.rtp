@@ -1,0 +1,108 @@
+{1 min = 6.0}
+$Resource_type Orders: permanent
+$Parameters
+  Number       : integer 
+  Condition   : (Expect, Serve, Ready) = Expect
+  Priority   : integer = 0
+  Quantity_goods   : integer = 0
+  Manufactured : integer = 0
+  Time_in  : real = 0.0
+  Time_plan  : real = 0.0
+  Time_out   : real = 0.0
+$End
+
+$Resource_type Line : permanent
+$Parameters
+  Number_line   : integer[1..16] 
+  Number_detail_stand    : integer = 1
+  Number_det   : integer = 3 
+  Color       : integer = 2
+  Exit       : (Passage, Endd) = Passage
+  Have_det    : (Yes, No) = No
+  Condition   : (Free, Ready, Busy, Arrange) = Free
+  Number_article   : integer = 0
+  Counter     : integer
+  Quan_storages     : integer = 0
+  Length_tape : real 
+$End
+
+$Resource_type Robot : permanent
+$Parameters
+  Number_robot     : integer[1..2]
+  Position     : (Line1, Line2, Line31, Line32, Rolgangin, Rolgang1, Rolgang2, Rolgang3, Rolgang4, Rolgang5, Rolgang6, Rolgang7, Rolgang8, Rolgang9, Rolgang10, Exit_prod) = Line1
+  Condition   : (Free, Load, Is_loaded, Unloading, Unloads, Is_load, Movement_fr, Movement_load, Call, Choices) = Free
+  Where        : such_as Robot.Position 
+  X_coor      : integer
+  Y_coor      : integer
+$End
+
+$Resource_type Rolgang : permanent
+$Parameters
+  Number_rolgang     : integer [1..16]
+  Freely      : integer [0..9] = 9
+  Number_article     : integer = 0
+   Stand_number_of_product        : integer [1..6] = 1
+   Color_product         : integer[1..3] = 1
+  Complete_set      : (Ready, Not_ready) = Not_ready
+  Num_in_turn : integer = 0
+  X_coor        : integer = 200
+  Y_coor        : integer
+$End
+
+$Resource_type Stand_detail : permanent
+$Parameters
+  Number_stand : integer [1..22]
+  Number_of_way  : integer[1..2] = 1  
+  Type_of_detail     : (Wall, Top_bottom, One_party, Bottom_two_parties) = One_party 
+  Width      : integer = 1
+  Length       : integer = 1
+  Quantity      : integer = 1
+$End
+
+$Resource_type System : permanent
+$Parameters
+  Condition      : (Op_Load, Op_Start) = Op_Load
+  Quan_products    : integer = 3
+  Quan_detail    : integer  [0..9] = 7
+  Number_product    : integer = 0
+  Num_article      : integer = 0
+  Number_detail   : integer = 1
+  Number_stand    : integer [1..22] = 1
+  Type_color     : integer = 0
+  Det_in_product        : integer = 7
+  R_1            : (Stop, Still) = Stop
+  R_2            : (Stop, Still) = Stop
+  R_3            : (Stop, Still) = Stop
+  Tr             : (Stop, Still) = Stop
+  M_dsp_1        : (Stop, Still) = Stop
+  M_dsp_2        : (Stop, Still) = Stop
+  M_dsp_31       : (Stop, Still) = Stop
+  M_dsp_32       : (Stop, Still) = Stop
+  Lin_31_l       : such_as Line.Condition 
+  Lin_32_l       : such_as System.Lin_31_l 
+  Queue        : integer
+  Product_in_order : integer = 3
+  Only_of_product    : integer = 3
+  Number_of_order   : integer = 1
+  Quan_of_preparations      : integer = 0
+  Only_of_detail    : integer = 0
+$End
+
+$Resource_type Details : temporary
+$Parameters
+  Number       : integer = 0
+  Number_article   : integer 
+  Num_article   : integer
+  Number_stand : integer  = 1
+  Color       : integer [1..3]
+  Way        : integer
+  Cond        : (Expectation, Processing, Ready) = Expectation
+  Transport   : (Robot1, Robot2, Robot3, No) = No
+  Place       : such_as Robot.Where
+  Next_place    : such_as Robot.Where
+  Rolg       : such_as Robot.Where
+  Priority_of_det    : real
+  Num_of_order  : integer
+  Size      : integer = 60
+$End
+

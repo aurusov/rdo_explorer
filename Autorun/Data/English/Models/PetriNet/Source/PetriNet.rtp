@@ -1,0 +1,13 @@
+$Resource_type Places : permanent
+$Parameters
+  Size         :  integer [0..25]
+  Number       :  integer [0..7]
+  Shade        :  integer 
+  Pic          :  integer 
+$End
+
+$Resource_type Transitions : permanent
+$Parameters
+  Being_busy   :  (Busy, Free)
+  Number       :  integer [0..3]
+$End

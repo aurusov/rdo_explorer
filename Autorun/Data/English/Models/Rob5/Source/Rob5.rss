@@ -1,0 +1,49 @@
+$Resources
+  C1    :   Conveyers               1   4   *   *
+  C2    :   Conveyers               2   4   *   *
+  C3    :   Conveyers               3   0   *   *
+  TR    :   Robots                  *   AssPos   *   220   *
+  AP    :   Machines                *   Unloaded   *   *
+  CP    :   Cooling_positions       0   *   *
+  GM    :   Machines                *   Unloaded   *   *
+
+  Shaft_1  : Parts   0.00   a_shaft  Conveyer_1  *
+  Shaft_2  : Parts   0.00   a_shaft  Conveyer_1  *
+  Shaft_3  : Parts   0.00   a_shaft  Conveyer_1  *
+  Shaft_4  : Parts   0.00   a_shaft  Conveyer_1  *
+  Fan_1    : Parts   0.00   a_fan    Conveyer_2  *
+  Fan_2    : Parts   0.00   a_fan    Conveyer_2  *
+  Fan_3    : Parts   0.00   a_fan    Conveyer_2  *
+  Fan_4    : Parts   0.00   a_fan    Conveyer_2  *
+
+  PoC1_1  : Part_of_conveyer        1   1   is_filled
+  PoC1_2  : Part_of_conveyer        1   2   is_filled
+  PoC1_3  : Part_of_conveyer        1   3   Empty
+  PoC1_4  : Part_of_conveyer        1   4   Empty
+  PoC1_5  : Part_of_conveyer        1   5   is_filled
+  PoC1_6  : Part_of_conveyer        1   6   is_filled
+  PoC2_1  : Part_of_conveyer        2   1   is_filled
+  PoC2_2  : Part_of_conveyer        2   2   is_filled
+  PoC2_3  : Part_of_conveyer        2   3   is_filled
+  PoC2_4  : Part_of_conveyer        2   4   Empty
+  PoC2_5  : Part_of_conveyer        2   5   Empty
+  PoC2_6  : Part_of_conveyer        2   6   is_filled
+  PoC3_1  : Part_of_conveyer        3   1   Empty
+  PoC3_2  : Part_of_conveyer        3   2   Empty
+  PoC3_3  : Part_of_conveyer        3   3   Empty
+  PoC3_4  : Part_of_conveyer        3   4   Empty
+  PoC3_5  : Part_of_conveyer        3   5   Empty
+  PoC3_6  : Part_of_conveyer        3   6   Empty
+
+  PoCP_1  : Part_of_conveyer        4   1   Empty
+  PoCP_2  : Part_of_conveyer        4   2   Empty
+  PoCP_3  : Part_of_conveyer        4   3   Empty
+  PoCP_4  : Part_of_conveyer        4   4   Empty
+  PoCP_5  : Part_of_conveyer        4   5   Empty
+  PoCP_6  : Part_of_conveyer        4   6   Empty
+  PoCP_7  : Part_of_conveyer        4   7   Empty
+  PoCP_8  : Part_of_conveyer        4   8   Empty
+  PoCP_9  : Part_of_conveyer        4   9   Empty
+  PoCP_10 : Part_of_conveyer        4   10  Empty
+$End
+

@@ -1,0 +1,15 @@
+Model_name = Storage
+
+Resource_file   = Storage
+OprIev_file     = Storage
+Frame_file      = Storage
+Statistic_file  = Storage
+Results_file    = Storage
+Trace_file      = Storage
+Show_mode       = Animation
+Frame_number    = 1
+Show_rate       = 200000.0
+
+Terminate_if  Time_now >= 4800.0
+X_1 = 100
+X_2 = 80

@@ -1,0 +1,24 @@
+Model_name = PetriNet
+
+Resource_file  = PetriNet     
+OprIev_file    = PetriNet  
+Frame_file     = PetriNet
+Statistic_file = PetriNet
+Results_file   = PetriNet 
+Trace_file     = PetriNet  
+{Run_StartTime  = 2.0}        
+{Trace_StartTime= 0.5}        
+{Trace_EndTime  = 1.0}      
+Show_mode       = Animation 
+Frame_number   = 1         
+Show_rate      = 10000.0    
+
+Terminate_if  Place_4.Pic >= 10 
+{Break_point  Point_1  Place_1.Size = 3 and Time_now >200.0}
+{Break_point  Point_2  Place_4.Size = 4}
+
+{Pseudorandom number generators bases:}
+Random_number_generator_1.Seed  = 31111
+Random_number_generator_2.Seed  = 131111
+Random_number_generator_3.Seed  = 1131111
+Random_number_generator_4.Seed  = 11131113

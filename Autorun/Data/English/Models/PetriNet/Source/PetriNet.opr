@@ -1,0 +1,15 @@
+$Operations
+  Oper_1    : Transition_firing_1    
+  Oper_2    : Transition_firing_2    
+  Oper_3    : Transition_firing_3    
+  Oper_4    : Delay_in_Place            1      0.0   0
+  Oper_5    : Delay_in_Place            2     15.0   1
+  Oper_6    : Delay_in_Place            3     20.0   1
+  Oper_7    : Delay_in_Place            4      0.0   0
+  Oper_8    : Delay_in_Place            5      0.1   0
+  Oper_9    : Delay_in_Place            6      0.0   0
+  Oper_10   : Delay_in_Place            7      0.0   0
+$End
+
+
+

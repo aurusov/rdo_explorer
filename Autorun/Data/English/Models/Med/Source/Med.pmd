@@ -1,0 +1,20 @@
+$Results 
+Computer_busy_0        : trace watch_state       Computer.Busy = 0 
+Computer_busy_1        : trace watch_state       Computer.Busy = 1 
+Computer_busy_2        : trace watch_state       Computer.Busy = 2 
+Computer_busy_3        : trace watch_state       Computer.Busy = 3 
+Computer_busy_4        : trace watch_state       Computer.Busy = 4 
+Computer_busy_5        : trace watch_state       Computer.Busy = 5 
+Gauge_busy_0           : trace watch_state       Gauges_busy.Heart = 0 
+Gauge_busy_1           : trace watch_state       Gauges_busy.Heart = 1 
+Gauge_busy_2           : trace watch_state       Gauges_busy.Heart = 2 
+Alarm_time             : trace watch_state       Nurse.Step_No <> 0 
+Inputing_correcting_data_time : trace watch_state 
+  [ Drug_s_data.Data = 1 ] and [Doctor.Step_No = 21]
+  and [Doctor.Step = Done] and [Doctor.Wants_to = Has_place ]
+Rythm_history         : trace watch_par          History_of_illness.Rythm 
+Pressure_history      : trace watch_par          History_of_illness.Pressure 
+Temperature_history   : trace watch_par          History_of_illness.Temperature 
+Resistance_history    : trace watch_par          History_of_illness.Resistanse 
+$End
+

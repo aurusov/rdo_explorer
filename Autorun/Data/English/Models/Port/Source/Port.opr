@@ -1,0 +1,13 @@
+$Operations
+  Tanker_arrival        : Tanker_arrival_pat
+  Tanker_creation       : Tanker_creation_pat
+  Mooring_by_tug        : Mooring_by_tug_pat
+  Step                  : Step_pat
+  Tanker_filling        : Tanker_filling_pat
+  Tanker_leaving        : Tanker_leaving_pat
+  Storm_beginning       : Storm_beginning_pat
+  Storm                 : Storm_pat
+  Tanker_leaving_type_4 : Tanker_leaving_pat_type_4
+  Tanker_navigation     : Tanker_navigation_pat
+$End
+

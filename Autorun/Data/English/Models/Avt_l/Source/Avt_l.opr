@@ -1,0 +1,36 @@
+$Operations
+Action_1      : Result_of_action_1
+Action_2      : Result_of_action_2
+Action_3      : Result_of_action_3
+
+Operation_1_1_p  : Transition_of_Automaton_Penalty  1  1  3  1  
+Operation_1_2_p  : Transition_of_Automaton_Penalty  1  2  1  1   
+Operation_1_3_p  : Transition_of_Automaton_Penalty  1  3  1  2
+Operation_1_4_p  : Transition_of_Automaton_Penalty  1  4  1  3
+ 
+Operation_2_1_p  : Transition_of_Automaton_Penalty  2  1  1  1  
+Operation_2_2_p  : Transition_of_Automaton_Penalty  2  2  2  1   
+Operation_2_3_p  : Transition_of_Automaton_Penalty  2  3  2  2
+Operation_2_4_p  : Transition_of_Automaton_Penalty  2  4  2  3
+
+Operation_3_1_p  : Transition_of_Automaton_Penalty  3  1  2  1  
+Operation_3_2_p  : Transition_of_Automaton_Penalty  3  2  3  1   
+Operation_3_3_p  : Transition_of_Automaton_Penalty  3  3  3  2
+Operation_3_4_p  : Transition_of_Automaton_Penalty  3  4  3  3  
+
+Operation_1_1_e  : Transition_of_Automaton_Encouragement  1  1  4
+Operation_1_2_e  : Transition_of_Automaton_Encouragement  1  2  4 
+Operation_1_3_e  : Transition_of_Automaton_Encouragement  1  3  4
+Operation_1_4_e  : Transition_of_Automaton_Encouragement  1  4  4
+
+Operation_2_1_e  : Transition_of_Automaton_Encouragement  2  1  4
+Operation_2_2_e  : Transition_of_Automaton_Encouragement  2  2  4 
+Operation_2_3_e  : Transition_of_Automaton_Encouragement  2  3  4
+Operation_2_4_e  : Transition_of_Automaton_Encouragement  2  4  4
+
+Operation_3_1_e  : Transition_of_Automaton_Encouragement  3  1  4
+Operation_3_2_e  : Transition_of_Automaton_Encouragement  3  2  4 
+Operation_3_3_e  : Transition_of_Automaton_Encouragement  3  3  4
+Operation_3_4_e  : Transition_of_Automaton_Encouragement  3  4  4
+ 
+$End

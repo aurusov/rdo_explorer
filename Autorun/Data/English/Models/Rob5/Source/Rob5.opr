@@ -1,0 +1,35 @@
+$Operations
+  Command_1     : Command_1_2_pat        1  Conveyer_1  Unloaded  a_shaft  Conveyer_1
+  Operation_11  : Loading_from_C1_2_pat  1  Conveyer_1  Unloaded  a_shaft  Conveyer_1
+  Operation_12  : Unloading_to_AP_pat    Unloaded   Shaft_is_loaded
+  Command_2     : Command_1_2_pat        2  Conveyer_2  Shaft_is_loaded  a_fan  Conveyer_2
+  Operation_21  : Loading_from_C1_2_pat  2  Conveyer_2  Shaft_is_loaded  a_fan  Conveyer_2
+  Operation_22  : Unloading_to_AP_pat  Shaft_is_loaded  Loaded
+  Command_3     : Command_3_pat
+  Operation_31  : Loading_from_AP_pat
+  Operation_32  : Unloading_to_CP_pat
+  Command_4     : Command_4_pat
+  Operation_41  : Loading_from_CP_pat
+  Operation_42  : Unloading_to_GM_pat
+  Command_5     : Command_5_pat
+  Operation_51  : Loading_from_GM_pat
+  Operation_52  : Unloading_to_C3_pat
+
+  Move_left            : Move_left_pat
+  Move_right           : Move_right_pat
+  Assembling           : Assembling_pat            0.0167
+  Grinding             : Grinding_pat              0.05
+  Fans_Shafts_Arrival  : Fans_Shafts_Arrival_pat   0.2
+  Shaft_Placing        : Fans_Shafts_Placing_pat   1   near_Conveyer_1   Conveyer_1
+  Fan_Placing          : Fans_Shafts_Placing_pat   2   near_Conveyer_2   Conveyer_2
+  Rotors_delivery      : Rotors_delivery_pat       0.005  6
+
+  Moving_of_conveyer_1  : Moving_of_conveyer_1_2_pat      0.01   1
+  Moving_of_conveyer_2  : Moving_of_conveyer_1_2_pat      0.01   2
+  Moving_of_conveyer_3  : Moving_of_conveyer_3_pat        0.01
+  Moving_of_CP          : Moving_of_CP_pat                0.02
+
+  Breakdown_of_GM  : Breakdown_of_GM_pat   1.0
+  Repairing_of_GM  : Repairing_of_GM_pat   0.1
+$End
+

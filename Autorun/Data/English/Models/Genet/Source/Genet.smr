@@ -1,0 +1,16 @@
+Model_name = Genet
+
+Resource_file   = Genet
+OprIev_file     = Genet
+Frame_file      = Genet
+Statistic_file  = Genet
+Results_file    = Genet
+Trace_file      = Genet
+Trace_EndTime   = 0.0001
+Show_mode       = Animation
+Frame_number    = 1
+Show_rate       = 1.0
+
+Terminate_if  Time_now >= 1000.0
+Number_of_generations = 50
+Uniformly.Seed        = 10001000

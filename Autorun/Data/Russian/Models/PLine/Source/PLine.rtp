@@ -1,0 +1,81 @@
+$Resource_type Конвейеры : permanent
+$Parameters
+  Номер                   : integer [1..200]
+  Количество_рядов        : integer [1..14]
+  Длина                   : real
+  Номер_пред_конв         : integer [0..200]
+  Номер_след_конв         : integer [0..200]
+  Передаваемая_часть      : integer [0..14]
+  Текущая_скорость        : real
+  Текущее_отношение       : real = 1.0
+  Изменение_скорости      : (да, нет) = нет
+  Текущее_количество      : integer  = 0
+  Текущее_колич_блоков    : integer [0..255] = 0
+  Количество_блоков       : integer  = 0
+  Состояние_входа         : (вход_свободен, происходит_пополнение) = вход_свободен
+  Состояние               : (свободен, движение) = свободен
+  Счетчик_оборотов        : integer = -32767
+  Положение               : real = 0.0
+$End
+
+$Resource_type Блок_бутылок : temporary
+$Parameters
+  Номер                   : integer
+  Номер_конвейера         : such_as Конвейеры.Номер
+  Расст_между_бут         : real = 0.0
+  Добавляемое_колич       : integer
+  Передаваемое_колич      : integer
+  Текущее_количество      : integer
+  Номер_оборота           : integer
+  Положение_начала        : real
+  Длина                   : real
+  Состояние               : (движение, прием)
+$End
+
+$Resource_type Датчики : permanent
+$Parameters
+  Номер                   : integer
+  Номер_конвейера         : such_as Конвейеры.Номер
+  Координата              : real
+  Состояние               : (аккумуляция, ничего, проходит_блок) = ничего
+  Время_переключения      : real = -1.0
+  Номер_блока             : integer = 0
+$End
+
+$Resource_type Блок_бутылок_для_показа : permanent
+$Parameters
+  Номер_конвейера         : such_as Конвейеры.Номер
+  Номер_блока             : such_as Блок_бутылок.Номер = 0
+  Состояние               : (свободен, занят) = свободен
+  Номер_оборота           : integer = 0
+  Положение_начала        : real
+  Длина                   : real
+$End
+
+$Resource_type Машины : permanent
+$Parameters
+  Производительность      : real
+  Текущее_отношение       : real = 1.0
+  Время_до_сбоя           : real = 0.0
+  Обработано_бут          : integer = 1
+  Состояние               : (свободен, занят) = свободен
+  Статус                  : (работает, стоп, поломка_сбой) = работает
+  Время_переключения      : real = 0.0
+  Счетчик_бут             : real = 0.0
+  Сбои_типа_А             : (vis_sans_fin_forcee, etoile_de_sortie_desac,
+                             boite_couchee_sertisseuse, secu_carter_prot_perrier,
+                             ecran_de_prot_n6_ouvert, def_porte_sertisseuse_dr,
+                             ecran_de_prot_n2_ouvert, ecran_de_prot_n4_ouvert,
+                             securite_carte_volant_manu, ecran_de_prot_n3_ouvert,
+                             ecran_de_prot_n1_ouvert, au_pupitre_arm_mach_soutir,
+                             au_derriere_simonazzi, ecran_de_prot_n5_ouvert) =
+                             vis_sans_fin_forcee
+  Сбои_типа_Б             : (defaut_bord_decoupe, def_prod_et_decoupe_async_1,
+                             double_decoupe, prod_tombe_apres_stat_grou,
+                             prod_tombe_entree_machine, def_prod_et_decoupe_async_2,
+                             defaut_fardelage, prod_incor_chaine_pliage,
+                             prod_tombe_chaine_separ, def_limit_couple_barquet,
+                             lubrification, thermique_disjoncte) =
+                             defaut_bord_decoupe
+$End
+

@@ -1,0 +1,12 @@
+$Operations
+    Pravilo1: Peremena2
+    Operac1: OsvWerh  0.05
+    Operac2: OsvWerh2 0.05
+    Pravilo3: Peremena3
+    Operac5: SwMesto  0.05
+    Operac3: OsvStor 0.05
+   Pravilo2: Peremena1
+   Operac4: OsvStor2 0.25
+    Operac6: Last  0.1
+    Operac0: Dopoln 0.26
+$End

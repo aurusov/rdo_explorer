@@ -1,0 +1,11 @@
+$Resources
+  BarberShop : A_BarberShop  trace  no_klients  3  *  0
+
+  Client_1  : Clients   1  in_a_queue  0.0  1
+  Client_2  : Clients   2  in_a_queue  0.0  3
+  Client_3  : Clients   3  in_a_queue  0.0  4
+  Client_4  : Clients   4  *          *    *
+  Client_5  : Clients   5  *          *    *
+  Client_6  : Clients   6  *          *    *
+$End
+

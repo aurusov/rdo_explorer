@@ -1,0 +1,12 @@
+$Resources
+  Place_1      : Places     trace     10  1   0  10
+  Place_2      : Places     trace     0   2   0   0
+  Place_3      : Places     trace     0   3   0   0
+  Place_4      : Places     trace     0   4   0   0
+  Place_5      : Places     trace     1   5   0   1
+  Place_6      : Places     trace     1   6   0   1
+  Place_7      : Places     trace     1   7   0   1
+  Transition_1    : Transitions        Free   1
+  Transition_2    : Transitions        Free   2
+  Transition_3    : Transitions        Free   3
+  $End

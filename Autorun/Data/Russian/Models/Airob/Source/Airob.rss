@@ -1,0 +1,19 @@
+$Resources
+ Detal1:Telo A   50  30  30  100 260 150  *
+ Detal2:Telo B   50  40  40  100  300 150 *
+ Detal3:Telo C   50  20  70  100 320 150 *
+ Detal4:Telo D1  20  45  70  210 320 100 UnMov
+ Detal5:Telo D2  50  45  20  230 320  55 UnMov
+ Detal6:Telo E   100  10  55  300 320 120 *
+ Detal7:Telo F   35   20   50  300 310 120 *
+ Detal8:Telo G   30   40   50  420 320 125 *
+ Detal9:Telo Pol 505 10  158  15 320  172  UnMov
+ Shvat:Instrument *  15  220 50  
+ Opora1:Na A B   C   Pol
+ Opora2:Na D1 Pol Pol Pol
+Opora5: Na D2 Pol Pol Pol
+ Opora3:Na F E   Pol Pol
+ Opora4:Na G Pol Pol Pol
+ Deistv: Action  take  A
+ Rez: Goal B E 54 18 7
+$End

@@ -1,0 +1,61 @@
+$Resources
+  Order_1     : Orders{trace} 1  Serve * 3 * * 5340.35 *
+  Order_2     : Orders{trace} 2  Expect * * * * * *
+  Order_3     : Orders {trace} 3  Expect * * * * * *
+  Order_4     : Orders {trace} 4  Expect * * * * * *
+  Order_5     : Orders {trace} 5  Expect * * * * * *
+  Order_6     : Orders {trace} 6  * * * * * * *
+  Order_7     : Orders {trace} 7  * * * * * * *
+  Order_8     : Orders {trace} 8  * * * * * * *
+  Order_9     : Orders trace 9  * * * * * * *
+  Order_10    : Orders trace 10 * * * * * * *
+ 
+  Line_1     : Line  {trace} 1 * * * Passage * Free * 0 * 100.0
+  Line_2     : Line  {trace} 2 * * * Passage * Free * 0 * 100.0
+  Line_31    : Line  {trace} 3 * * *    *    * Free * 0 * 100.0
+  Line_32    : Line  {trace} 4 * * *    *    * Free * 0 * 100.0
+
+  Robot_1     : Robot {trace} 1 Line32     Free * 43  435
+  Robot_2     : Robot {trace} 2 Line31     Free * 493 435
+  Robot_3     : Robot trace 2 Rolgang2   Free * 717 106
+  Conveyor : Robot trace 2 Line1      Free * 450 200
+
+  Rolgang_in : Rolgang {trace}  5  9 * * * Not_ready * 100 100
+  Rolgang_1  : Rolgang {trace}  6  9 * * * Not_ready * * 62
+  Rolgang_2  : Rolgang {trace}  7  9 * * * Ready    * * 106
+  Rolgang_3  : Rolgang {trace}  8  9 * * * Not_ready * * 150
+  Rolgang_4  : Rolgang {trace}  9  9 * * * Not_ready * * 195
+  Rolgang_5  : Rolgang {trace}  10 9 * * * Not_ready * * 240
+  Rolgang_6  : Rolgang {trace}  11 9 * * * Ready    * * 285
+  Rolgang_7  : Rolgang {trace}  12 9 * * * Not_ready * * 329
+  Rolgang_8  : Rolgang {trace}  13 9 * * * Not_ready * * 375
+  Rolgang_9  : Rolgang trace  14 9 * * * Not_ready * * 420
+  Rolgang_10 : Rolgang {trace}  15 9 * * * Not_ready * * 465
+  Out_rolg   : Rolgang {trace}  16 9 * * * Ready    * * 40  
+
+  Detail_1    : Stand_detail 1   1 Top_bottom    * * * 
+  Detail_2    : Stand_detail 2   2 Bottom_two_parties * * * 
+  Detail_3    : Stand_detail 3   1 Wall      * * * 
+  Detail_4    : Stand_detail 4   1 Wall      * * * 
+  Detail_5    : Stand_detail 5   1 One_party    * * * 
+  Detail_6    : Stand_detail 6   1 One_party    * * * 
+  Detail_7    : Stand_detail 7   1 One_party    * * * 
+  Detail_8    : Stand_detail 8   1 Top_bottom    * * * 
+  Detail_9    : Stand_detail 9   1 Wall      * * * 
+  Detail_10   : Stand_detail 10  1 Wall      * * * 
+  Detail_11   : Stand_detail 11  1 One_party    * * * 
+  Detail_12   : Stand_detail 12  1 One_party    * * * 
+  Detail_13   : Stand_detail 13  1 Wall      * * * 
+  Detail_14   : Stand_detail 14  1 Wall      * * * 
+  Detail_15   : Stand_detail 15  1 One_party    * * * 
+  Detail_16   : Stand_detail 16  1 One_party    * * * 
+  Detail_17   : Stand_detail 17  1 Wall      * * * 
+  Detail_18   : Stand_detail 18  1 Wall      * * * 
+  Detail_19   : Stand_detail 19  1 One_party    * * * 
+  Detail_20   : Stand_detail 20  1 One_party    * * * 
+  Detail_21   : Stand_detail 21  1 One_party    * * * 
+  Detail_22   : Stand_detail 22  1 One_party    * * * 
+
+  Systema      : System trace * 0 * * * * * * * * * * * * * * * * * 0 3 * 2 * *
+$End
+

@@ -1,0 +1,23 @@
+$Results
+  Passed_way                : watch_par    The_automobile_MECHANICAL1.Passed_way
+  Speed                     : watch_par    The_automobile_MECHANICAL1.Speed
+  Acceleration              : watch_par    The_automobile_MECHANICAL1.Acceleration
+  Consumption               : watch_par    The_automobile_MECHANICAL1.Consumption
+  The_turn_of_the_wheels    : watch_par    The_automobile_MECHANICAL1.Angle_of_wheels
+  Vibration                 : watch_par    The_automobile_ACS1.Vibration
+  Slope                     : watch_par    The_automobile_ACS1.Slope
+  Movement                  : watch_state  The_automobile_ACS1.Movement = A_const_speed
+  Dispersal                 : watch_state  The_automobile_ACS1.Movement = Is_accelerated
+  Braking_auto              : watch_state  The_automobile_ACS1.Movement = Is_braked
+  Vision_of_a_sign          : watch_state  The_automobile_ACS1.Vision_of_a_sign = I_see
+  A_sign_is_not_vision      : watch_state  The_automobile_ACS1.Vision_of_a_sign = I_do_not_see
+  Attribute_max             : watch_state  The_automobile_ACS1.An_attribute = Restriction_max
+  Attribute_min             : watch_state  The_automobile_ACS1.An_attribute = Restriction_min
+  A_section_type            : watch_state  The_automobile_ACS1.A_section_type = Special
+  Vision_of_turn            : watch_state  The_automobile_ACS1.Vision_of_turn = I_see
+  A_highway                 : watch_state  The_automobile_ACS1.A_highway = A_beginning
+  The_end_of_arterial_road  : watch_state  The_automobile_ACS1.A_highway = The_end
+  The_turn_of_the_rudder    : watch_state  The_automobile_ACS1.A_rudder = Woking
+  A_rudder_is_switched_off  : watch_state  The_automobile_ACS1.A_rudder = Is_switched_off
+$End
+

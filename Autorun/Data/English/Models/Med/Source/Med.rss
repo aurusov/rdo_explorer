@@ -1,0 +1,21 @@
+$Resources 
+  Patient_s_state          : State       90 120 366 100 
+  Gauges_busy              : Gauge_busy_type       1    1   1   1 
+  Gauge_of_heart_rythm     : Gauges         90   0 
+  Gauge_of_pressure        : Gauges         120  0 
+  Gauge_of_temperature     : Gauges         366  0 
+  Gauge_of_skin_resistance : Gauges         100  0 
+  Range_of_rythm           : Ranges       150  30 
+  Range_of_pressure        : Ranges       240  40 
+  Range_of_temperature     : Ranges       400  350 
+  Range_of_skin_resistance : Ranges       300  50 
+  Nurse                    : Nurses trace 0 Done 650 59
+  Computer                 : Computers      1 
+  Doctor                   : Doctors           Has_no_place_1 0 Done * *
+  Drug_s_data              : Drugs       0 
+  Treating_doctors_s_data  : Treating_doctors   0 
+  History_of_illness       : State       0 0 0 0 
+  Initializing_pulse       : Initializing_pulses Has_no_place_1 0 0 0 0 0 0 0 0 0 
+  View                     : Screen_view     Blinking_1
+$End 
+
