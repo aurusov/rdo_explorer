@@ -56,6 +56,6 @@ $Resources
   Detail_21   : Stand_detail 21  1 One_party    * * * 
   Detail_22   : Stand_detail 22  1 One_party    * * * 
 
-  Systema      : System trace * 0 * * * * * * * * * * * * * * * * * 0 3 * 2 * *
+  Systema      : System trace * 0 * * * * * * * * * * * * * * * * * 0 2 3 * * *
 $End
 

@@ -63,9 +63,9 @@ $Body
                 Automaton_.State_Position  = Position
           first
     Convert_rule
-                Status           set  Action
                 State_Petal      set  Petal_new_pen
                 State_Position   set  Position_new_pen
+                Status           set  Action
                 Counter          set  Automaton_.Counter + 1
 $End
    
@@ -86,8 +86,8 @@ $Body
                 Automaton_.State_Position  = Position 
           first
     Convert_rule
-                Status              set  Action
                 State_Position      set  Position_new_enc
+                Status              set  Action
                 Counter             set  Automaton_.Counter + 1
 $End
    

@@ -60,8 +60,8 @@ $Body
  Convert_begin
  	State	set Inaccessible
  Convert_end	
-	State	set Input
 	Where	set Inc_to4(Mar.Where)
+	State	set Input
 $End
 
 $Pattern Take:operation
@@ -130,8 +130,8 @@ $Body
  Convert_begin
 	State		set Inaccessible
  Convert_end
-	State		set Output
 	Weight		set Who.Weight - 1
+	State		set Output
 $End
 
 $Pattern Put:operation

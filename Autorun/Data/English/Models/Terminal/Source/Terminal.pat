@@ -11,8 +11,8 @@ $Body
               Rel_System.Last_Go <> No_Where
   first
    Convert_begin
-    Condition set Do
     Last_Go   set Rel_System.Where_Go
+    Condition set Do
    Convert_end
     Where_Go  set Ref_Up(Rel_System.Last_Go,Rel_Saver_Sub.How_Much)
     Condition set E_Do
@@ -64,8 +64,8 @@ $Body
               Rel_System.Last_Go <> No_Where
   first
    Convert_begin
-    Condition set Do
     Last_Go   set Rel_System.Where_Go
+    Condition set Do
    Convert_end
     Where_Go  set Ref_Down(Rel_System.Last_Go,
                            Rel_Saver_Sub1.How_Much * 1000 + Rel_Saver_Sub2.How_Much,
@@ -117,8 +117,8 @@ $Body
               Rel_System.Last_Go <> No_Where
   first
    Convert_begin
-    Condition set Do
     Last_Go   set Rel_System.Where_Go
+    Condition set Do
    Convert_end
     Where_Go  set Ref(Rel_System.Last_Go,Rel_Saver_Sub.How_Much,
                       Rel_Saver_Cell.How_Much)
@@ -316,11 +316,11 @@ $Body
   first
    Convert_rule
     Time_End set Time_now
+    Effect_Time set Rel_Robocar.Effect_Time + Rel_Robocar.Time_End
+                    - Rel_Robocar.Time_Begin
     arb         set 1
     arb1        set 0
     arb2        set 0
-    Effect_Time set Rel_Robocar.Effect_Time + Rel_Robocar.Time_End
-                    - Rel_Robocar.Time_Begin
  Rel_System
   Choice from Rel_System.Number = Rel_Robocar.Number
   first
@@ -338,11 +338,11 @@ $Body
   first
    Convert_rule
     Time_End set Time_now
+    Effect_Time set Rel_Robocar.Effect_Time + Rel_Robocar.Time_End
+                    - Rel_Robocar.Time_Begin
     arb  set 1
     arb1 set 0
     arb2 set 0
-    Effect_Time set Rel_Robocar.Effect_Time + Rel_Robocar.Time_End
-                    - Rel_Robocar.Time_Begin
  Rel_System
   Choice NoCheck
   first
@@ -360,11 +360,11 @@ $Body
   first
    Convert_rule
     Time_End set Time_now
+    Effect_Time set Rel_Robocar.Effect_Time + Rel_Robocar.Time_End
+                    - Rel_Robocar.Time_Begin
     arb  set 1
     arb1 set 0
     arb2 set 0
-    Effect_Time set Rel_Robocar.Effect_Time + Rel_Robocar.Time_End
-                    - Rel_Robocar.Time_Begin
  Rel_System
   Choice NoCheck
   first
@@ -404,8 +404,8 @@ $Body
               Rel_Saver.How_Much > 0
    first
     Convert_begin
-     Last_Go  set  Cell_Buzy
      Where_Go set  Saver_Up_Free
+     Last_Go  set  Cell_Buzy
 $End
 $Pattern Rescue_Up : rule
 $Relevant_resources
@@ -421,8 +421,8 @@ $Body
               Rel_Saver.How_Much > 0
    first
     Convert_rule
-     Last_Go  set  Saver2
      Where_Go set  Custom
+     Last_Go  set  Saver2
 $End
 $Pattern Rescue_Down : rule
 $Relevant_resources
@@ -449,8 +449,8 @@ Rel_Saver_Sub3
               Rel_Saver_Sub3.How_Much > 0
    first
     Convert_rule
-     Last_Go  set  Saver1_Out
      Where_Go set  Saver3
+     Last_Go  set  Saver1_Out
 $End
 $Pattern Fly_In : operation
 $Relevant_resources
@@ -461,8 +461,8 @@ $Body
   Choice from Rel_Saver.Ready = On
   first
    Convert_begin
-    Ready set Off
     How_Much set Rel_Saver.How_Much + Fly_How_Much
+    Ready set Off
   Convert_end
     Ready set On
 $End

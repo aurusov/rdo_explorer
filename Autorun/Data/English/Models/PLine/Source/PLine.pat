@@ -153,8 +153,8 @@ $Body
                  This_conveyer.length - Bottle_size
     first
     Convert_rule
-      enter_state     set enter_free
       change_speed    set no
+      enter_state     set enter_free
   Prev_conveyer
     Choice from  Prev_conveyer.next_conv_number = Conveyer_number and
                  [Prev_conveyer.cur_quant = 0 or Prev_conveyer.cur_speed = 0.0 or

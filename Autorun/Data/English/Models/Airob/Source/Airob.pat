@@ -73,8 +73,8 @@ $Body
 FreePlace(Mod(Dan.Ox,SbEd4.Xa),Us((Dan.Ox-SbEd4.Xa),SbEd4.SizeOx,SbEd1.SizeOx))=free
               first
               Convert_begin
-                         SolidN set SbEd1.Name
                          Do set take
+                         SolidN set SbEd1.Name
                Convert_end
                          Do set put
 
@@ -105,8 +105,8 @@ $Body
                                  SbEd1.Mobil = Mov
            first
          Convert_begin
-                    Ya set SbEd1.Ya -(SbEd1.SizeOy + 5)
                     Xa  NoChange
+                    Ya set SbEd1.Ya -(SbEd1.SizeOy + 5)
                     Za  NoChange
          Convert_end
                Xa set {F1(SbEd1.Xa,(SbEd3.Xa+SbEd3.SizeOx + 2))} SbEd3.Xa + SbEd3.SizeOx + 2
@@ -152,8 +152,8 @@ $Body
        Choice from (SbEd3.Xa + SbEd3.SizeOx + SbEd1.SizeOx)<(Pole.Xa + Pole.SizeOx)
               first
              Convert_begin
-                         SolidN set Dan.Solid1
                          Do set take
+                         SolidN set Dan.Solid1
               Convert_end
                          Do set put
 $End
@@ -234,11 +234,11 @@ $Body
     Choice from FreeSide(Us((SbEd1.Xa-SbEd2.Xa),(SbEd1.Xa-(SbEd2.Xa+SbEd2.SizeOx)),(SbEd2.Xa-(SbEd1.Xa+SbEd1.SizeOx))))=free
        first
       Convert_begin
-         SolidN set SbEd1.Name
          Do set take
+         SolidN set SbEd1.Name
       Convert_end
-         SolidN NoChange
          Do set put
+         SolidN NoChange
 $End
 
 $Pattern FrSide: operation trace
@@ -311,8 +311,8 @@ SbEd1.Xa + Road(SbEd1.Xa,SbEd2.Xa)< (Pole.Xa + Pole.SizeOx)
      Choice from FreeSide(Us((SbEd1.Xa-SbEd2.Xa),(SbEd1.Xa-(SbEd2.Xa+SbEd2.SizeOx)),(SbEd2.Xa-(SbEd1.Xa+SbEd1.SizeOx))))=nofree
       first
      Convert_begin
-      SolidN set Dan.Solid1
       Do set take
+      SolidN set Dan.Solid1
     Convert_end
          Do set put
          SolidN NoChange
@@ -395,11 +395,11 @@ Base(Us((SbEd1.Xa-SbEd3.Xa),(SbEd1.Xa-(SbEd3.Xa+SbEd3.SizeOx)),(SbEd3.Xa-(SbEd1.
                  (SbEd2.Xa-(SbEd1.Xa+SbEd1.SizeOx))))=nofree
                    first
            Convert_begin
-                     SolidN set SbEd1.Name
                      Do set take
+                     SolidN set SbEd1.Name
             Convert_end
-                     SolidN  NoChange
                      Do set put
+                     SolidN  NoChange
 $End
 
 $Pattern FrPlace: operation trace
@@ -461,11 +461,11 @@ FreePlace(Mod(SbEd1.Xa,Dan.Ox),Us((SbEd1.Xa-Dan.Ox),SbEd.SizeOx,SbEd1.SizeOx))=n
       Choice from FreeSide(Us((SbEd1.Xa-SbEd2.Xa),(SbEd1.Xa-(SbEd2.Xa+SbEd2.SizeOx)),(SbEd2.Xa-(SbEd1.Xa+SbEd1.SizeOx))))=free
         first
       Convert_begin
-          SolidN set SbEd1.Name
           Do set take
+          SolidN set SbEd1.Name
       Convert_end
-          SolidN  NoChange
           Do set kill
+          SolidN  NoChange
 $End
 
 $Pattern Change1: rule trace

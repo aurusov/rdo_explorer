@@ -205,8 +205,8 @@ $Body
     Convert_begin
       State          set leaving
     Convert_end
-      State          set gone
       Tanker_number  set 0
+      State          set gone
       Terminal       set 0
   _terminal
     Choice from _terminal.Number = TTS_old.Terminal

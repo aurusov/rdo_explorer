@@ -378,8 +378,8 @@ rel_2_The_automobile
   Convert_begin
     A_condition          set Passively1
     Vision_of_turn       set I_do_not_see
-    A_rudder             set Woking1
     Turn_direction       set Is_absent
+    A_rudder             set Woking1
 $End
 
 $Pattern  The_turn_is_not_seen1 : operation
@@ -420,8 +420,8 @@ rel_1_The_automobile
 
   Convert_rule
     A_condition              set Passively1
-    A_rudder                   set Is_switched_off
     Turn_direction   set Is_absent
+    A_rudder                   set Is_switched_off
 
 rel_2_The_automobile
   Choice NoCheck

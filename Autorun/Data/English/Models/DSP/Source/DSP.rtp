@@ -81,9 +81,9 @@ $Parameters
   Lin_31_l       : such_as Line.Condition 
   Lin_32_l       : such_as System.Lin_31_l 
   Queue        : integer
+  Number_of_order   : integer = 1
   Product_in_order : integer = 3
   Only_of_product    : integer = 3
-  Number_of_order   : integer = 1
   Quan_of_preparations      : integer = 0
   Only_of_detail    : integer = 0
 $End

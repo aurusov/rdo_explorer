@@ -639,8 +639,8 @@ $Body
       wood_kind        set cut_out_result.wood_kind
       quality          set cut_out_result.quality
       place_code       set Cv_3
-      lap_number       set Conveyer_3.lap_count
       position         set Conveyer_3.position + cut_out_result.length
+      lap_number       set Conveyer_3.lap_count
       order_number     set cut_out_result.order_number
       position_number  set cut_out_result.position_number
       storage_code     set cut_out_result.storage_code
@@ -695,8 +695,8 @@ $Body
                 conveyer_from.movement = no
     first
     Convert_begin
-      status           set stoped
       cur_trunk_quant  set conveyer_from.cur_trunk_quant - 1
+      status           set stoped
     Convert_end
       status           set forward
   conveyer_to
@@ -748,8 +748,8 @@ $Body
       place_code       set passing
     Convert_end
       place_code       set Tr_3
-      lap_number       set transporter.lap_count
       position         set transporter.position
+      lap_number       set transporter.lap_count
   conveyer
     Choice from conveyer.cur_trunk_quant > 0 and
                 conveyer.movement = no
@@ -862,8 +862,8 @@ $Body
       place_code       set passing
     Convert_end
       place_code       set Cv_4
-      lap_number       set conveyer.lap_count
       position         set conveyer.position + 200
+      lap_number       set conveyer.lap_count
   conveyer
     Choice from conveyer.cur_trunk_quant = 0
     first
@@ -905,8 +905,8 @@ $Body
       place_code       set passing
     Convert_end
       place_code       set Cv_5
-      lap_number       set conveyer_to.lap_count
       position         set conveyer_to.position - some_piece_of_trunk.length
+      lap_number       set conveyer_to.lap_count
   conveyer_to
     Choice NoCheck first
     Convert_end

@@ -11,8 +11,8 @@ $Body
       State           set Wait_delivery
     Convert_end
       Presence        set Warehouse.Presence + X_1
-      Deliveries_fee  set Warehouse.Deliveries_fee + C_2
       State           set Normal
+      Deliveries_fee  set Warehouse.Deliveries_fee + C_2
 $End
 
 $Pattern  Consumption  : operation   trace

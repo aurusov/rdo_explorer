@@ -20,9 +20,9 @@ $Body
       first
       Convert_rule
 	Quan_products     set 0
+	Number_of_order    set System_w.Number_of_order + 1
 	Product_in_order  set Number_of_prod(1,6) 
 	Only_of_product     set System_w.Only_of_product + System_w.Product_in_order 
-	Number_of_order    set System_w.Number_of_order + 1
    Order
     Choice from Order.Number = System_w.Number_of_order and Order.Condition = Expect
       first
@@ -202,8 +202,8 @@ $Body
      Convert_begin
        Condition set Movement_fr
      Convert_end
-       Condition set Load 
        Position   set Rob_1.Where
+       Condition set Load 
        Where      set Detail.Next_place 
 $End
 
@@ -234,8 +234,8 @@ $Body
      Convert_begin
        Condition set Movement_load
      Convert_end
-       Condition set Unloading
        Position   set Rob_1.Where
+       Condition set Unloading
   Detail
     Choice from Detail.Cond = Processing and Detail.Next_place = Rob_1.Where and Detail.Transport = No and Detail.Place = Rob_1.Position
      first
@@ -282,12 +282,12 @@ $Body
       first
       Convert_begin
         Number_det set Detail.Number
+	Color     set Detail.Color
 	Condition set Arrange
 	Number_article set Detail.Num_article
-	Color     set Detail.Color
      Convert_end
-        Condition set Ready
 	Number_detail_stand  set Detail.Number_stand
+        Condition set Ready
 $End
 
 $Pattern Operation_1_2 : operation trace
@@ -305,9 +305,9 @@ $Body
 	Counter   set 0
 	Quan_storages   set Detail.Size
      Convert_end
-	Condition set Ready
         Exit     set Change(Lin.Exit)
 	Have_det  set No
+	Condition set Ready
   Detail
     Choice from Detail.Cond = Processing and Translation(Detail.Place) = Lin.Number_line
      first
@@ -441,8 +441,8 @@ $Body
     Choice from Lin1.Condition = Ready 
       first
       Convert_begin
-	Condition set Busy
 	Have_det  set Yes
+	Condition set Busy
 	Counter   set 0
 	Quan_storages   set Detail.Size
      Convert_end
@@ -456,8 +456,8 @@ $Body
 	Counter   set 0
 	Quan_storages   set Detail.Size
      Convert_end
-	Condition set Free
 	Have_det  set No
+	Condition set Free
   Detail
     Choice from Detail.Cond = Processing and [Translation(Detail.Place) = 3 or Translation(Detail.Place) = 4] and Detail.Number_stand = 2
      first
@@ -563,8 +563,8 @@ $Body
      Convert_begin
        Condition set Movement_fr
      Convert_end
-       Condition set Load 
        Position   set Rob_2.Where
+       Condition set Load 
        Where      set Detail.Next_place 
 $End
 
@@ -586,8 +586,8 @@ $Body
      Convert_begin
        Condition set Movement_fr
      Convert_end
-       Condition set Load 
        Position   set Rob_3.Where
+       Condition set Load 
        Where      set Detail.Next_place 
   Rol
     Choice from Rol.Number_rolgang = Translation(Rob_3.Where)
@@ -632,8 +632,8 @@ $Body
      Convert_begin
        Condition set Movement_load
      Convert_end
-       Condition set Unloading
        Position   set Rob_3.Where
+       Condition set Unloading
   Detail
     Choice from Detail.Cond = Processing and Detail.Place = Rob_3.Position and Detail.Transport = No and Detail.Place <> Detail.Next_place 
      first

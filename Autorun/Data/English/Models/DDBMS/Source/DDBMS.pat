@@ -997,10 +997,10 @@ Pr	set	Tr.Pr
 Soc	set	Tr.Soc
 Act	set 	Tr.Act 
 Cr_time	set	Time_now
+Qu	set	0
 F_c	set	0
 Ct	set	0
 Cn	set	0
-Qu	set	0
 Pz_c	set	0
 $End
 
@@ -1115,9 +1115,9 @@ STr
 	STr.Qu = -3
 first					
 Convert_rule 
+F_c	set	0
 Ct	set	Tr.Ct
 Cn	set	STr.Cn + 1
-F_c	set	0
 Tr
 	Choice from
 	Tr.Who = M and Tr.Num = STr.Num and Tr.Soc = STr.Soc and Tr.Ct <> STr.Ct
@@ -1253,7 +1253,7 @@ SQS
 	SQS.Arr <> Off or SQS.Con <> Off
 first
 Convert_rule
-Arr	set	Off
 Con	set	Off
+Arr	set	Off
 $End
 
